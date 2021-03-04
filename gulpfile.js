@@ -7,15 +7,15 @@ const sourcemaps = require('gulp-sourcemaps');
 sass.compiler = require('sass');
 
 function sassBuild() {
-	return src('./*.scss')
+	return src('./assets/scss/*.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
 		.pipe(sourcemaps.write('.'))
-		.pipe(dest('./'));
+		.pipe(dest('./assets/css'));
 }
 
 function sassWatch() {
-	return watch('./*.scss', sassBuild);
+	return watch('./assets/scss/*.scss', sassBuild);
 }
 
 function sassBuildChart() {
