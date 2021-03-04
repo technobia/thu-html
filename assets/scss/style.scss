@@ -15,7 +15,7 @@
 }
 #hero-section .block-left {
   padding: 15px 180px 15px 30px;
-  background: black url("../images/_hero-left.jpg") no-repeat 50% 50%;
+  background: black url("../images/hero-left.jpg") no-repeat 50% 50%;
   background-size: cover;
   filter: grayscale(1);
   position: relative;
@@ -24,7 +24,7 @@
 #hero-section .block-right {
   padding: 15px 30px 15px 180px;
   filter: grayscale(1);
-  background: url("../images/_hero-right.jpg") no-repeat 50% 60%;
+  background: url("../images/hero-right.jpg") no-repeat 50% 60%;
   background-size: cover;
   min-height: 360px;
   transition: 1s ease;
@@ -54,7 +54,7 @@
   }
 }
 #hero-section .divider {
-  background: url("./images/_plant-1.png") no-repeat 50% 50%;
+  background: url("../images/plant-1.png") no-repeat 50% 50%;
   background-size: contain;
   width: 350px;
   height: 445px;
