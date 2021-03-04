@@ -1,0 +1,25 @@
+{
+  "name": "cryptme",
+  "scripts": {
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "start": "http-server -p 4000"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/runtime": "^7.11.2",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.26.5"
+  },
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "description": ""
+}
