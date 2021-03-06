@@ -5,7 +5,8 @@ $font-text: 'Comfortaa', cursive;
 $font-heading: 'Dancing Script', cursive;
 
 html, body {
-  font-family: $font-text
+  font-family: $font-text;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-leaf {
-  background: #6EF832;
+  background: #85f807;
   font-weight: bold;
   height: 50px;
   display: inline-flex;
@@ -29,6 +30,14 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   border-radius: 100vh 0 100vh 100vh;
+
+  &-2 {
+    background: #afdd92;
+  }
+
+  &-3 {
+    background: #e3aa50;
+  }
 }
 
 // Sections
