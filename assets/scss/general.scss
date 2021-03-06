@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+$font-text: 'Comfortaa', cursive;
+$font-heading: 'Dancing Script', cursive;
 
 html, body {
-  font-family: 'Comfortaa', cursive;
+  font-family: $font-text
 }
 
-.font-primary {
-  font-family: 'Comfortaa', cursive;
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+}
+
+.font-text {
+  font-family: $font-text
+}
+
+.font-heading {
+  font-family: $font-heading
 }
 
 .btn-leaf {
@@ -17,4 +29,28 @@ html, body {
   align-items: center;
   justify-content: center;
   border-radius: 100vh 0 100vh 100vh;
+}
+
+// Sections
+.section-title {
+  font-family: $font-heading;
+  font-size: 60px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background: #909090;
+  }
+}
+
+//Utils
+.py-10 {
+  padding-top: 128px;
+  padding-bottom: 128px;
 }

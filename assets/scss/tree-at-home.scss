@@ -1,3 +1,6 @@
+$primary-color: #3d9b19;
+$secondary-color: #7abf18;
+
 #tree-at-home {
   min-height: 100vh;
   padding: 0;
@@ -58,7 +61,7 @@
 
         &:hover {
           text-decoration: none;
-          border-color: #6EF832;
+          border-color: $primary-color;
           border-radius: 100vh 0 100vh 100vh;
         }
       }
@@ -106,6 +109,93 @@
     .title {
       color: white;
       margin-bottom: 24px;
+    }
+  }
+}
+
+//////////// TREE INFORMATION ////////////
+.tree-information {
+  background: #fbfbfb;
+
+  .content {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding-top: 300px;
+
+    .image {
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+
+      img {
+        width: auto;
+        height: 250px;
+      }
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      cursor: default;
+
+      * {
+        transition: .25s ease;
+      }
+
+      .icon {
+        margin-bottom: 20px;
+        font-size: 50px;
+      }
+
+      &:hover {
+        .icon,
+        .text h3 {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .tree-information {
+    .content {
+      padding-top: 0;
+      column-gap: 350px;
+
+      .image {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+          height: 450px;
+        }
+      }
+
+      .item {
+        text-align: left;
+        flex-direction: row;
+
+        .icon {
+          margin-right: 40px;
+          margin-bottom: 0;
+        }
+      }
+      .item:nth-child(odd) {
+        text-align: right;
+        flex-direction: row-reverse;
+
+        .icon {
+          margin-right: 0;
+          margin-left: 40px;
+        }
+      }
     }
   }
 }
