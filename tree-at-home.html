@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Tree At Home</title>
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
     <script src="./vendor/bootstrap/jquery-3.5.1.slim.min.js"></script>
     <script src="./vendor/bootstrap/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./vendor/flaticon/style.css">
+    <link rel="stylesheet" href="./assets/css/testimonial.css">
     <link rel="stylesheet" href="./assets/css/tree-at-home.css">
     <link rel="stylesheet" href="./assets/css/general.css">
 </head>
@@ -58,7 +60,7 @@
                     <h2>Title 2</h2>
                     <div class="mb-4 text-success">Sub title</div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                    <button class="btn btn-leaf">Chọn cây</button>
+                    <button class="btn btn-leaf" data-toggle="modal" data-target="#treeConfiguration">Chọn cây</button>
                 </div>
                 <div class="col-xl-4 px-5 text-center mb-5">
                     <div class="icon mb-5"><img src="./assets/images/leaf-2.png" alt=""></div>
@@ -128,6 +130,115 @@
             </div>
         </div>
     </section>
+
+    <section id="testim" class="testim pt-10">
+        <div class="section-title text-center mb-5">Khách hàng chứng nhận</div>
+        <div class="testim-cover">
+            <div class="wrap">
+
+                <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+                <ul id="testim-dots" class="dots">
+                    <li class="dot active"></li><!--
+                    --><li class="dot"></li><!--
+                    --><li class="dot"></li><!--
+                    --><li class="dot"></li><!--
+                    --><li class="dot"></li>
+                </ul>
+                <div id="testim-content" class="cont">
+
+                    <div class="active">
+                        <div class="img"><img src="https://picsum.photos/id/1/100/100" alt=""></div>
+                        <h2>Lorem P. Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="https://picsum.photos/id/2/100/100" alt=""></div>
+                        <h2>Mr. Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="https://picsum.photos/id/3/100/100" alt=""></div>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="https://picsum.photos/id/4/100/100" alt=""></div>
+                        <h2>Lorem De Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="https://picsum.photos/id/5/100/100" alt=""></div>
+                        <h2>Ms. Lorem R. Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="./assets/images/logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-3">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Danh mục</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="index.html"></a></li>
+                                <li><a href="#three-item">Trang chủ</a></li>
+                                <li><a href="#tree-information">Các loại lá</a></li>
+                                <li><a href="#tree-information">Cách trồng cây</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>Theo dõi chúng tôi</h4>
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2021 powered by Ha Oanh Thu.  All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
+
+<div class="modal fade" id="treeConfiguration" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="myModalLabel">Chọn cây</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div>Coming soon...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./assets/js/testimonial.js"></script>
 </body>
 </html>
