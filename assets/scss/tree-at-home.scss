@@ -7,68 +7,6 @@ $secondary-color: #7abf18;
   position: relative;
 }
 
-//////////// MAIN MENU ////////////
-.navbar {
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  align-items: center;
-  background: rgba(0, 0, 0, .5);
-
-  &-brand {
-    margin: 0 auto;
-    padding-left: 56px;
-
-    img {
-      height: 50px;
-    }
-  }
-
-  &-nav {
-    .nav-item {
-      margin: 0 15px;
-      border: 2px solid transparent;
-      transition: .25s ease-in;
-      text-align: center;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    .nav-link {
-      font-weight: bold;
-      color: white !important;
-    }
-  }
-}
-@media (min-width: 992px) {
-  .navbar {
-    background: transparent;
-
-    &-brand {
-      margin: 0;
-      padding-left: 20px;
-
-      img {
-        height: 70px;
-      }
-    }
-
-    &-nav {
-      .nav-item {
-        padding: 0 30px;
-
-        &:hover {
-          text-decoration: none;
-          border-color: #85f807;
-          border-radius: 100vh 0 100vh 100vh;
-        }
-      }
-    }
-  }
-}
-
 //////////// HERO SECTION ////////////
 .hero-section {
   min-height: 100vh;
@@ -202,10 +140,25 @@ $secondary-color: #7abf18;
 
 
 // #treeConfiguration
-@media (min-width: 1200px) {
+@media (min-width: 767px) {
   #treeConfiguration {
     .modal-dialog {
       max-width: calc(100% - 3.5rem);
+      min-height: calc(100vh - 3.5rem);
+    }
+
+    .modal-content {
+      min-height: calc(100vh - 3.5rem);
+    }
+
+    .card {
+      position: relative;
+
+      &-img-top {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+      }
     }
   }
 }

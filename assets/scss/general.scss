@@ -66,6 +66,70 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
+//////////// MAIN MENU ////////////
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  align-items: center;
+  background: rgba(0, 0, 0, .5);
+
+  &-brand {
+    margin: 0 auto;
+    padding-left: 56px;
+
+    img {
+      height: 50px;
+    }
+  }
+
+  &-nav {
+    .nav-item {
+      margin: 0 15px;
+      border: 2px solid transparent;
+      transition: text-decoration .25s ease-in, border-color .25s ease-in, border-radius .25s ease-in;
+      text-align: center;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .nav-link {
+      font-weight: bold;
+      color: white !important;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .navbar {
+    background: transparent;
+
+    &-brand {
+      margin: 0;
+      padding-left: 20px;
+
+      img {
+        height: 70px;
+      }
+    }
+
+    &-nav {
+      .nav-item {
+        padding: 0 30px;
+
+        &:hover {
+          text-decoration: none;
+          border-color: #85f807;
+          border-radius: 100vh 0 100vh 100vh;
+        }
+      }
+    }
+  }
+}
+
+
 // FOOTER
 
 /*FOOTER*/

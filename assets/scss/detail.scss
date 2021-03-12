@@ -1,0 +1,26 @@
+#detail {
+  min-height: 100vh;
+  padding: 0;
+  position: relative;
+}
+
+.navbar {
+  position: relative;
+
+  &.navbar-dark .navbar-nav .nav-link {
+    color: black !important;
+  }
+}
+
+// PRODUCT DETAIL
+.product-detail {
+  .image {
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: 500px;
+      object-fit: contain;
+    }
+  }
+}
