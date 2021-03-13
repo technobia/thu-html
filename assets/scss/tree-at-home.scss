@@ -51,9 +51,15 @@ $secondary-color: #7abf18;
   }
 }
 
+//////////// TREE ITEM ////////////
+.three-item {
+  position: relative;
+  z-index: 1;
+}
+
 //////////// TREE INFORMATION ////////////
 .tree-information {
-  background: #f7f7f7;
+  background: #fbfbfb;
 
   .content {
     position: relative;
