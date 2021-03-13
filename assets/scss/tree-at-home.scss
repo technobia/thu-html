@@ -142,6 +142,8 @@ $secondary-color: #7abf18;
 // #treeConfiguration
 @media (min-width: 767px) {
   #treeConfiguration {
+    padding-right: 0 !important;
+
     .modal-dialog {
       max-width: calc(100% - 3.5rem);
       min-height: calc(100vh - 3.5rem);

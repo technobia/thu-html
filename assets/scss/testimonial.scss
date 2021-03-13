@@ -1,3 +1,9 @@
+@media (min-width: 992px) {
+  .testim {
+    padding-top: 120px;
+  }
+}
+
 .testim {
   width: 100%;
 }
@@ -36,7 +42,7 @@
 }
 
 .testim .arrow:hover {
-  color: green;
+  color: #95C93D;
 }
 
 
@@ -65,7 +71,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 1px solid green;
+  border: 1px solid #95C93D;
   margin: 0 10px;
   cursor: pointer;
   -webkit-transition: all .5s ease-in-out;
@@ -78,8 +84,8 @@
 
 .testim .dots .dot.active,
 .testim .dots .dot:hover {
-  background: green;
-  border-color: green;
+  background: #5c7641;
+  border-color: #5c7641;
 }
 
 .testim .dots .dot.active {
@@ -125,7 +131,7 @@
 }
 
 .testim .cont div h2 {
-  color: green;
+  color: #95C93D;
   font-size: 2rem;
   margin: 15px 0;
 }
