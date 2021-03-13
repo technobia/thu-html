@@ -31,6 +31,8 @@
 }
 #hero-section .block-left,
 #hero-section .block-right {
+  height: calc(100vh - 55px);
+
   .content {
     background: rgba(0, 0, 0, .5);
     padding: 15px;
@@ -75,10 +77,28 @@
 }
 
 @media (min-width: 992px) {
-  #hero-section .logo {
-    right: 0;
-    left: auto;
-    top: 10px;
-    transform: translateX(50%);
+  #hero-section {
+    height: calc(100vh - 55px);
+    .logo {
+      right: 0;
+      left: auto;
+      top: 10px;
+      transform: translateX(50%);
+    }
+  }
+}
+
+// FOOTER
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+
+  .icons {
+    img {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
