@@ -6,7 +6,7 @@
 }
 #hero-section .logo {
   width: 350px;
-  height: 350px;
+  height: 140px;
   position: absolute;
   top: 20px;
   left: 50%;
@@ -79,26 +79,46 @@
 @media (min-width: 992px) {
   #hero-section {
     height: calc(100vh - 55px);
+
     .logo {
       right: 0;
       left: auto;
       top: 10px;
       transform: translateX(50%);
+      padding-left: 12px;
     }
   }
 }
 
 // FOOTER
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 55px;
+  background: #5c7641;
+
+  &-right {
+    height: 55px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
 
   .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+
     img {
-      width: 25px;
-      height: 25px;
+      width: 20px;
+      height: 20px;
+    }
+
+    a {
+      padding: 3px 15px;
+      background: white;
+      border-radius: 100vh 0 100vh 100vh;
     }
   }
 }
