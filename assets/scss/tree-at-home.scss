@@ -14,12 +14,13 @@ $secondary-color: #7abf18;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   .video {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    right: -75px;
     bottom: 0;
 
     &:before {
@@ -36,6 +37,7 @@ $secondary-color: #7abf18;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: right;
     }
   }
 
@@ -47,6 +49,13 @@ $secondary-color: #7abf18;
     .title {
       color: white;
       margin-bottom: 24px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .hero-section {
+    .video {
+      right: 0;
     }
   }
 }
@@ -65,7 +74,7 @@ $secondary-color: #7abf18;
   .item {
     padding: 0 15px;
     text-align: center;
-    width: 200px;
+    width: 310px;
     height: 300px;
 
     .icon {
@@ -87,6 +96,28 @@ $secondary-color: #7abf18;
     margin-top: 50px;
   }
 }
+@media (min-width: 460px) {
+  .three-item {
+    .container {
+      max-width: 600px;
+    }
+
+    .item {
+      width: 200px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .three-item {
+    .container {
+      max-width: 720px;
+    }
+
+    .item {
+      margin: 0 25px;
+    }
+  }
+}
 @media (min-width: 992px) {
   .three-item {
     .item-wrapper {
@@ -104,6 +135,13 @@ $secondary-color: #7abf18;
       p {
         min-height: 50px;
       }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .three-item {
+    .container {
+      max-width: 1140px;
     }
   }
 }

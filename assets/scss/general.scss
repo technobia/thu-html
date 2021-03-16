@@ -76,7 +76,6 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 0, 0, .5);
 
   &-brand {
-    margin: 0 auto;
     padding-left: 56px;
 
     img {
@@ -102,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .navbar {
     background: transparent;
 
