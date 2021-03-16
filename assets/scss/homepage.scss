@@ -14,16 +14,16 @@
   z-index: 1;
 }
 #hero-section .block-left {
-  padding: 15px 180px 15px 30px;
+  padding: 15px;
   background: black url("../images/hero-left.jpg") no-repeat 50% 50%;
   background-size: cover;
-  filter: grayscale(1);
+  //filter: grayscale(1);
   position: relative;
   transition: 1s ease;
 }
 #hero-section .block-right {
-  padding: 15px 30px 15px 180px;
-  filter: grayscale(1);
+  padding: 15px;
+  //filter: grayscale(1);
   background: url("../images/hero-right.jpg") no-repeat 50% 60%;
   background-size: cover;
   min-height: 360px;
@@ -31,14 +31,15 @@
 }
 #hero-section .block-left,
 #hero-section .block-right {
-  height: calc(100vh - 55px);
+  height: 100vh;
 
   .content {
     background: rgba(0, 0, 0, .5);
     padding: 15px;
     border-radius: 6px;
-    opacity: 0;
-    transform: translateY(20px);
+    width: 100%;
+    //opacity: 0;
+    //transform: translateY(20px);
     transition: .75s .5s ease;
 
     p {
@@ -47,7 +48,7 @@
   }
 
   &:hover {
-    filter: grayscale(0);
+    //filter: grayscale(0);
 
     .content {
       opacity: 1;
@@ -83,9 +84,26 @@
     .logo {
       right: 0;
       left: auto;
-      top: 10px;
+      top: 90px;
       transform: translateX(50%);
-      padding-left: 12px;
+      padding-left: 15px;
+    }
+
+    .block-left {
+      padding: 15px 180px 15px 30px;
+    }
+
+    .block-right {
+      padding: 15px 30px 15px 180px;
+    }
+
+    .block-left,
+    .block-right {
+      height: calc(100vh - 55px);
+
+      .content {
+        width: 550px;
+      }
     }
   }
 }
@@ -95,15 +113,6 @@
   height: 55px;
   background: #5c7641;
 
-  &-right {
-    height: 55px;
-    padding-bottom: 10px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-
   .icons {
     display: flex;
     align-items: center;
@@ -111,14 +120,34 @@
     height: 55px;
 
     img {
-      width: 20px;
-      height: 20px;
+      width: 26px;
+      height: 26px;
+      display: inline-block;
+      margin: 0 7px;
     }
+  }
 
-    a {
-      padding: 3px 15px;
-      background: white;
-      border-radius: 100vh 0 100vh 100vh;
+  &-right {
+    height: 55px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 10px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+    &-right {
+      justify-content: flex-end;
+
+      span {
+        font-size: 12px;
+        color: white;
+      }
     }
   }
 }
