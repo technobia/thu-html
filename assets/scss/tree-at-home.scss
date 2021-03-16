@@ -55,6 +55,57 @@ $secondary-color: #7abf18;
 .three-item {
   position: relative;
   z-index: 1;
+
+  .item-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .item {
+    padding: 0 15px;
+    text-align: center;
+    width: 200px;
+    height: 300px;
+
+    .icon {
+      height: 100px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    p {
+      min-height: 40px;
+    }
+  }
+
+  .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .three-item {
+    .item-wrapper {
+      gap: 50px;
+    }
+
+    .item {
+      width: 200px;
+      height: 500px;
+
+      .icon {
+        height: 200px;
+      }
+
+      p {
+        min-height: 50px;
+      }
+    }
+  }
 }
 
 //////////// TREE INFORMATION ////////////
@@ -145,18 +196,26 @@ $secondary-color: #7abf18;
 }
 
 
-// #treeConfiguration
+// MODAL
+#treeConfiguration {
+  .card {
+    &-img-top {
+      width: 100%;
+      height: 100px;
+    }
+  }
+}
 @media (min-width: 767px) {
   #treeConfiguration {
-    padding-right: 0 !important;
+    //padding-right: 0 !important;
 
     .modal-dialog {
-      max-width: calc(100% - 3.5rem);
-      min-height: calc(100vh - 3.5rem);
+      //max-width: calc(100% - 3.5rem);
+      //min-height: calc(100vh - 3.5rem);
     }
 
     .modal-content {
-      min-height: calc(100vh - 3.5rem);
+      //min-height: calc(100vh - 3.5rem);
     }
 
     .card {
@@ -167,6 +226,21 @@ $secondary-color: #7abf18;
         height: 150px;
         object-fit: contain;
       }
+    }
+  }
+}
+
+
+
+// PRODUCT DETAIL
+.product-detail {
+  .image {
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: 500px;
+      object-fit: contain;
     }
   }
 }

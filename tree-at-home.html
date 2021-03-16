@@ -7,6 +7,9 @@
     <script src="https://use.fontawesome.com/1744f3f671.js"></script>
     <script src="./vendor/bootstrap/jquery-3.5.1.slim.min.js"></script>
     <script src="./vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./vendor/owlcarousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="./vendor/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./vendor/flaticon/style.css">
     <link rel="stylesheet" href="./assets/css/testimonial.css">
@@ -55,27 +58,104 @@
     <section class="three-item section-wrapper shadow">
         <div class="container py-10">
             <div class="section-title text-center mb-5" id="three-item">Các loại lá</div>
-            <div class="row mx-n5">
-                <div class="col-xl-4 px-lg-5 text-center mb-5">
-                    <div class="icon mb-5"><img src="./assets/images/leaf-1.png" alt=""></div>
-                    <h2>Title 2</h2>
-                    <div class="mb-4 text-success">Sub title</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                    <button class="btn btn-leaf" data-toggle="modal" data-target="#treeConfiguration">Danh Sách</button>
-                </div>
-                <div class="col-xl-4 px-lg-5 text-center mb-5">
-                    <div class="icon mb-5"><img src="./assets/images/leaf-2.png" alt=""></div>
-                    <h2>Title 2</h2>
-                    <div class="mb-4 text-success">Sub title</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                    <button class="btn btn-leaf btn-leaf-2" data-toggle="modal" data-target="#treeConfiguration">Danh Sách</button>
-                </div>
-                <div class="col-xl-4 px-lg-5 text-center mb-5">
-                    <div class="icon mb-5"><img src="./assets/images/leaf-3.png" alt=""></div>
-                    <h2>Title 2</h2>
-                    <div class="mb-4 text-success">Sub title</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                    <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#treeConfiguration">Danh Sách</button>
+            <div class="row mx-lg-n5">
+                <div class="owl-carousel owl-theme">
+                    <div class="item-wrapper">
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-1.png" alt=""></div>
+                            <h2>Cây xà nu</h2>
+                            <div class="mb-lg-4 text-success">Trồng 3 tháng</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-2.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-2" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-1.png" alt=""></div>
+                            <h2>Cây xà nu</h2>
+                            <div class="mb-lg-4 text-success">Trồng 3 tháng</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-2.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-2" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-1.png" alt=""></div>
+                            <h2>Cây xà nu</h2>
+                            <div class="mb-lg-4 text-success">Trồng 3 tháng</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-2.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-2" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -224,7 +304,7 @@
     </footer>
 </div>
 
-<div class="modal fade" id="treeConfiguration" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+<div class="modal fade" id="treeConfiguration">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -237,91 +317,73 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card rounded-circle overflow-hidden">
+                            <div class="card overflow-hidden">
                                 <div class="text-center">
                                     <img src="./assets/images/leaf-1.png" class="card-img-top">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Item #1</h5>
-                                    <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text text-center">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </p>
+                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="text-center"><a href="javascript:void(0);" class="btn btn-leaf" data-toggle="modal" data-target="#detail1">Chọn</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="card overflow-hidden">
+                                <div class="text-center">
+                                    <img src="./assets/images/leaf-1.png" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Item #1</h5>
+                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card rounded-circle overflow-hidden">
+                            <div class="card overflow-hidden">
                                 <div class="text-center">
                                     <img src="./assets/images/leaf-1.png" class="card-img-top">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Item #1</h5>
-                                    <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text text-center">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </p>
+                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card rounded-circle overflow-hidden">
+                            <div class="card overflow-hidden">
                                 <div class="text-center">
                                     <img src="./assets/images/leaf-1.png" class="card-img-top">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Item #1</h5>
-                                    <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text text-center">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </p>
+                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card rounded-circle overflow-hidden">
+                            <div class="card overflow-hidden">
                                 <div class="text-center">
                                     <img src="./assets/images/leaf-1.png" class="card-img-top">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Item #1</h5>
-                                    <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text text-center">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </p>
+                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card rounded-circle overflow-hidden">
+                            <div class="card overflow-hidden">
                                 <div class="text-center">
                                     <img src="./assets/images/leaf-1.png" class="card-img-top">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Item #1</h5>
-                                    <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text text-center">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </p>
-                                    <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card rounded-circle overflow-hidden">
-                                <div class="text-center">
-                                    <img src="./assets/images/leaf-1.png" class="card-img-top">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Item #1</h5>
-                                    <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text text-center">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </p>
+                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
                                 </div>
                             </div>
@@ -333,6 +395,35 @@
     </div>
 </div>
 
+<div class="modal fade" id="detail">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Detail #1</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid pt-3 pt-lg-5">
+                    <section class="product-detail">
+                        <h1 class="mb-4">Thông tin chi tiết</h1>
+
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="image border">
+                                    <img src="./assets/images/plant-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="./assets/js/testimonial.js"></script>
+<script src="./assets/js/treeAtHome.js"></script>
 </body>
 </html>
