@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trồng cây trong rừng</title>
+    <title>Tree At Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
     <script src="./vendor/bootstrap/jquery-3.5.1.slim.min.js"></script>
     <script src="./vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./vendor/owlcarousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="./vendor/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/flaticon/style.css">
     <link rel="stylesheet" href="./assets/css/testimonial.css">
-    <link rel="stylesheet" href="./assets/css/detail.css">
+    <link rel="stylesheet" href="./assets/css/tree-at-forest.css">
     <link rel="stylesheet" href="./assets/css/general.css">
 </head>
 <body>
-<div id="detail" class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark justify-content-between border-bottom shadow bg-white">
-        <a class="navbar-brand" href="#"><img src="./assets/images/logo-dark.svg" alt="Logo"></a>
+<div id="tree-at-forest" class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
+        <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
                 aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,18 +31,410 @@
                     <a class="nav-link" href="index.html">Trang chủ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="tree-at-home.html">Trồng cây tại nhà</a>
+                    <a class="nav-link" href="#three-item">Các loại lá</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="tree-at-forest.html">Trồng cây trong rừng</a>
+                    <a class="nav-link" href="#tree-information">Cách trồng cây</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Liên hệ</a>
+                    <a class="nav-link" href="#">Liên hệ</a>
                 </li>
             </ul>
         </div>
     </nav>
 
+    <section class="hero-section position-relative shadow">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1XdkQPREMeC-idY4vpygkh6-KoY9w7qJf" style="border:0;width: 100%;height: 100%;" loading="lazy"></iframe>
+        </div>
+        <div class="btn-register d-block d-lg-none">
+            <button class="btn-leaf" data-toggle="modal" data-target="#register">Đăng ký</button>
+        </div>
+    </section>
+
+    <section class="three-item section-wrapper shadow">
+        <div class="container py-10">
+            <div class="section-title text-center mb-5" id="three-item">Các loại lá</div>
+            <div class="row mx-lg-n5">
+                <div class="owl-carousel owl-theme">
+                    <div class="item-wrapper">
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-1.png" alt=""></div>
+                            <h2>Cây xà nu</h2>
+                            <div class="mb-lg-4 text-success">Trồng 3 tháng</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-2.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-2" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-1.png" alt=""></div>
+                            <h2>Cây xà nu</h2>
+                            <div class="mb-lg-4 text-success">Trồng 3 tháng</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-2.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-2" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-1.png" alt=""></div>
+                            <h2>Cây xà nu</h2>
+                            <div class="mb-lg-4 text-success">Trồng 3 tháng</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-2.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-2" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                        <div class="item">
+                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
+                            <h2>Title 2</h2>
+                            <div class="mb-lg-4 text-success">Sub title</div>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tree-information shadow position-relative">
+        <div class="container py-10">
+            <div class="section-title text-center mb-5" id="tree-information">Cách trồng cây</div>
+            <div class="content">
+                <div class="image"><img src="./assets/images/tree-information.png" alt=""></div>
+                <div class="item d-flex align-items-center">
+                    <div class="icon flaticon-sprinkler-1"></div>
+                    <div class="text">
+                        <h3>Title 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda deserunt</p>
+                    </div>
+                </div>
+                <div class="item d-flex align-items-center">
+                    <div class="icon flaticon-farming-and-gardening-1"></div>
+                    <div class="text">
+                        <h3>Title 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda deserunt</p>
+                    </div>
+                </div>
+                <div class="item d-flex align-items-center">
+                    <div class="icon flaticon-wheelbarrow-1"></div>
+                    <div class="text">
+                        <h3>Title 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda deserunt</p>
+                    </div>
+                </div>
+                <div class="item d-flex align-items-center">
+                    <div class="icon flaticon-farming-and-gardening"></div>
+                    <div class="text">
+                        <h3>Title 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda deserunt</p>
+                    </div>
+                </div>
+                <div class="item d-flex align-items-center">
+                    <div class="icon flaticon-gardening-1"></div>
+                    <div class="text">
+                        <h3>Title 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda deserunt</p>
+                    </div>
+                </div>
+                <div class="item d-flex align-items-center">
+                    <div class="icon flaticon-witch"></div>
+                    <div class="text">
+                        <h3>Title 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda deserunt</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testim" class="testim pt-10">
+        <div class="section-title text-center mb-5">Hãy tham gia cùng chúng tôi</div>
+        <div class="testim-cover">
+            <div class="wrap">
+
+                <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+                <ul id="testim-dots" class="dots">
+                    <li class="dot active"></li><!--
+                    --><li class="dot"></li><!--
+                    --><li class="dot"></li><!--
+                    --><li class="dot"></li><!--
+                    --><li class="dot"></li>
+                </ul>
+                <div id="testim-content" class="cont">
+
+                    <div class="active">
+                        <div class="img"><img src="https://picsum.photos/id/1/200/200" alt=""></div>
+                        <h2>Lorem P. Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="https://picsum.photos/id/2/200/200" alt=""></div>
+                        <h2>Mr. Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="https://picsum.photos/id/3/200/200" alt=""></div>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="https://picsum.photos/id/4/200/200" alt=""></div>
+                        <h2>Lorem De Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="https://picsum.photos/id/5/200/200" alt=""></div>
+                        <h2>Ms. Lorem R. Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 mb-3 mb-lg-0">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="./assets/images/logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-3 mb-3 mb-lg-0">
+                        <!--Column1-->
+                        <div class="footer-pad text-center text-lg-left">
+                            <h4>Danh mục</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="index.html"></a></li>
+                                <li><a href="#three-item">Trang chủ</a></li>
+                                <li><a href="#tree-information">Các loại lá</a></li>
+                                <li><a href="#tree-information">Cách trồng cây</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-center text-lg-left mb-3 mb-lg-0">
+                        <h4>Theo dõi chúng tôi</h4>
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2021 powered by Ha Oanh Thu.  All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
+
+<div class="modal fade" id="treeConfiguration">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="myModalLabel">Chọn cây</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="card overflow-hidden">
+                                <div class="text-center">
+                                    <img src="./assets/images/leaf-1.png" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Item #1</h5>
+                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="text-center"><a href="javascript:void(0);" class="btn btn-leaf" data-toggle="modal" data-target="#detail1">Chọn</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="card overflow-hidden">
+                                <div class="text-center">
+                                    <img src="./assets/images/leaf-1.png" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Item #1</h5>
+                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="card overflow-hidden">
+                                <div class="text-center">
+                                    <img src="./assets/images/leaf-1.png" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Item #1</h5>
+                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="card overflow-hidden">
+                                <div class="text-center">
+                                    <img src="./assets/images/leaf-1.png" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Item #1</h5>
+                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="card overflow-hidden">
+                                <div class="text-center">
+                                    <img src="./assets/images/leaf-1.png" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Item #1</h5>
+                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="card overflow-hidden">
+                                <div class="text-center">
+                                    <img src="./assets/images/leaf-1.png" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Item #1</h5>
+                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="detail">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Thông tin chi tiết</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <section class="product-detail">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="image border">
+                                    <img src="./assets/images/plant-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="register">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Đăng ký thông tin</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./assets/js/testimonial.js"></script>
+<script src="./assets/js/treeAtHome.js"></script>
 </body>
 </html>
