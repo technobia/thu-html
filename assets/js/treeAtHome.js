@@ -22,4 +22,7 @@ $(window).ready(() => {
       }
     }
   })
+
+
+  $('[data-toggle="popover"]').popover()
 })

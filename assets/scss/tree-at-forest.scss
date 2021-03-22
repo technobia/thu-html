@@ -13,21 +13,60 @@ $secondary-color: #7abf18;
 
 //////////// HERO SECTION ////////////
 .hero-section {
-  min-height: 100vh;
+  height: 768px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
   position: relative;
 
   .map {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: calc(100vh + 46px);
-    transform: translateY(-46px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1920px;
+    height: 768px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .spots {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+
+      &-item {
+        cursor: pointer;
+        position: absolute;
+        padding: 5px;
+        border: 0;
+        border-radius: 100vh;
+        overflow: hidden;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+        background: teal;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:focus {
+          outline: none;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
   }
 
   .btn-register {
@@ -43,6 +82,8 @@ $secondary-color: #7abf18;
 }
 @media (min-width: 992px) {
   .hero-section {
+    padding-top: 130px;
+
     .map {
       .form {
         top: 152px;
@@ -56,225 +97,73 @@ $secondary-color: #7abf18;
   }
 }
 
-//////////// TREE ITEM ////////////
-.three-item {
-  position: relative;
-  z-index: 1;
 
-  .item-wrapper {
+// EVENT SECTION
+.events-section {
+  background: #f4f4f4;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  .grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
-  }
+    gap: 50px;
+    max-width: 500px;
+    margin: auto;
 
-  .item {
-    padding: 0 15px;
-    text-align: center;
-    width: 310px;
-    height: 300px;
+    .item {
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: .25s ease;
+      box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
 
-    .icon {
-      height: 100px;
+      &:hover {
+        transform: translateY(5px);
+        box-shadow: 0 9px 15px 0 rgb(0 0 0 / 10%);
+      }
 
       img {
         width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-    }
-
-    p {
-      min-height: 40px;
-    }
-  }
-
-  .owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: 50px;
-  }
-}
-@media (min-width: 460px) {
-  .three-item {
-    .container {
-      max-width: 600px;
-    }
-
-    .item {
-      width: 200px;
-    }
-  }
-}
-@media (min-width: 768px) {
-  .three-item {
-    .container {
-      max-width: 720px;
-    }
-
-    .item {
-      margin: 0 25px;
-    }
-  }
-}
-@media (min-width: 992px) {
-  .three-item {
-    .item-wrapper {
-      gap: 50px;
-    }
-
-    .item {
-      width: 200px;
-      height: 500px;
-
-      .icon {
-        height: 200px;
+        height: 300px;
+        object-fit: cover;
       }
 
-      p {
-        min-height: 50px;
-      }
-    }
-  }
-}
-@media (min-width: 1200px) {
-  .three-item {
-    .container {
-      max-width: 1140px;
-    }
-  }
-}
-
-//////////// TREE INFORMATION ////////////
-.tree-information {
-  background: #fbfbfb;
-
-  .content {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    padding-top: 300px;
-
-    .image {
-      position: absolute;
-      left: 0;
-      right: 0;
-      text-align: center;
-
-      img {
-        width: auto;
+      .content {
+        position: absolute;
+        top: -29px;
+        left: -31px;
+        width: 250px;
         height: 250px;
-      }
-    }
+        background: $secondary-color;
+        border: 2px solid $primary-color;
+        border-radius: 100vh;
+        padding: 40px;
 
-    .item {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      cursor: default;
-
-      * {
-        transition: .25s ease;
-      }
-
-      .icon {
-        margin-bottom: 20px;
-        font-size: 50px;
-      }
-
-      &:hover {
-        .icon,
-        .text h3 {
-          color: $secondary-color;
+        h2, p {
+          color: white;
         }
       }
-    }
-  }
-}
 
-@media (min-width: 992px) {
-  .tree-information {
-    .content {
-      padding-top: 0;
-      column-gap: 350px;
+      &-right .content{
+        right: -31px;
+        left: auto;
+      }
 
-      .image {
+      button {
         position: absolute;
-        top: 0;
+        bottom: 15px;
         left: 50%;
         transform: translateX(-50%);
-
-        img {
-          height: 450px;
-        }
-      }
-
-      .item {
-        text-align: left;
-        flex-direction: row;
-
-        .icon {
-          margin-right: 40px;
-          margin-bottom: 0;
-        }
-      }
-      .item:nth-child(odd) {
-        text-align: right;
-        flex-direction: row-reverse;
-
-        .icon {
-          margin-right: 0;
-          margin-left: 40px;
-        }
       }
     }
   }
 }
-
-
-// MODAL
-#treeConfiguration {
-  .card {
-    &-img-top {
-      width: 100%;
-      height: 100px;
-    }
-  }
-}
-@media (min-width: 767px) {
-  #treeConfiguration {
-    //padding-right: 0 !important;
-
-    .modal-dialog {
-      //max-width: calc(100% - 3.5rem);
-      //min-height: calc(100vh - 3.5rem);
-    }
-
-    .modal-content {
-      //min-height: calc(100vh - 3.5rem);
-    }
-
-    .card {
-      position: relative;
-
-      &-img-top {
-        width: 150px;
-        height: 150px;
-        object-fit: contain;
-      }
-    }
-  }
-}
-
-
-
-// PRODUCT DETAIL
-.product-detail {
-  .image {
-    text-align: center;
-
-    img {
+@media (min-width: 992px) {
+  .events-section {
+    .grid {
       max-width: 100%;
-      height: 500px;
-      object-fit: contain;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

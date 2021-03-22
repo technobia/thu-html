@@ -45,219 +45,128 @@
 
     <section class="hero-section position-relative shadow">
         <div class="map">
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1XdkQPREMeC-idY4vpygkh6-KoY9w7qJf" style="border:0;width: 100%;height: 100%;" loading="lazy"></iframe>
+            <img src="./assets/images/map-vietnam.jpg" alt="">
+            <div class="spots">
+                <button
+                    class="spots-item"
+                    style="top: 25%; left: 45%"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="About tree #1"
+                    data-content="Lorem ipsum dolor sit amet"
+                    data-placement="bottom"
+                >
+                    <img src="./assets/images/icon-tree.svg" alt="">
+                </button>
+                <button
+                    class="spots-item"
+                    style="top: 30%; left: 46%"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="About tree #2"
+                    data-content="Lorem ipsum dolor sit amet"
+                    data-placement="bottom"
+                >
+                    <img src="./assets/images/icon-tree.svg" alt="">
+                </button>
+                <button
+                    class="spots-item"
+                    style="top: 50%; left: 52%"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="About tree #3"
+                    data-content="Lorem ipsum dolor sit amet"
+                    data-placement="bottom"
+                >
+                    <img src="./assets/images/icon-tree.svg" alt="">
+                </button>
+                <button
+                    class="spots-item"
+                    style="top: 75%; left: 53%"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="About tree #4"
+                    data-content="Lorem ipsum dolor sit amet"
+                    data-placement="bottom"
+                >
+                    <img src="./assets/images/icon-tree.svg" alt="">
+                </button>
+                <button
+                    class="spots-item"
+                    style="top: 81%; left: 50%"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="About tree #5"
+                    data-content="Lorem ipsum dolor sit amet"
+                    data-placement="bottom"
+                >
+                    <img src="./assets/images/icon-tree.svg" alt="">
+                </button>
+            </div>
         </div>
-        <div class="btn-register d-block d-lg-none">
-            <button class="btn-leaf" data-toggle="modal" data-target="#register">Đăng ký</button>
+        <div class="row">
+            <div class="col-lg-3 offset-lg-8">
+                <div class="card card-outline-secondary d-none d-lg-block">
+                    <div class="card-header">
+                        <h3 class="mb-0">Đăng ký tư vấn</h3>
+                    </div>
+                    <div class="card-body">
+                        <form autocomplete="off" class="form" role="form">
+                            <div class="form-group">
+                                <label for="name">Tên của bạn <span class="text-danger">*</span></label>
+                                <input class="form-control" id="name" placeholder="Vui lòng nhập tên của bạn" type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email của bạn <span class="text-danger">*</span></label>
+                                <input class="form-control" id="email" placeholder="Vui lòng nhập email của bạn" required="" type="email">
+                            </div>
+                            <div class="form-group">
+                                <label>Tên công ty</label>
+                                <input class="form-control" placeholder="Tên công ty" required="" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>Số điện thoại</label>
+                                <input class="form-control" placeholder="Số điện thoại" required="" type="text">
+                            </div>
+                            <div class="form-group text-center">
+                                <button class="btn btn-success" type="submit">
+                                    <i class="icon flaticon-email mr-2"></i>
+                                    Đăng ký
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="three-item section-wrapper shadow">
+    <section class="events-section">
+        <div class="container">
+            <div class="grid">
+                <div class="item rounded">
+                    <img src="./assets/images/event-1.jpg" alt="">
+                    <div class="content">
+                        <h2>Event title #1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias architecto</p>
+                    </div>
+                    <button class="btn btn-leaf">Chi tiết</button>
+                </div>
+                <div class="item rounded item-right">
+                    <img src="./assets/images/event-2.jpg" alt="">
+                    <div class="content">
+                        <h2>Event title #2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias architecto</p>
+                    </div>
+                    <button class="btn btn-leaf">Chi tiết</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-section">
         <div class="container py-10">
-            <div class="section-title text-center mb-5" id="three-item">Các loại lá</div>
-            <div class="row mx-lg-n5">
-                <div class="owl-carousel owl-theme">
-                    <div class="item-wrapper">
-                        <div class="item">
-                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-1.png" alt=""></div>
-                            <h2>Cây xà nu</h2>
-                            <div class="mb-lg-4 text-success">Trồng 3 tháng</div>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <button class="btn btn-leaf" data-toggle="modal" data-target="#detail">Danh Sách</button>
-                        </div>
-                        <div class="item">
-                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-2.png" alt=""></div>
-                            <h2>Title 2</h2>
-                            <div class="mb-lg-4 text-success">Sub title</div>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <button class="btn btn-leaf btn-leaf-2" data-toggle="modal" data-target="#detail">Danh Sách</button>
-                        </div>
-                    </div>
-                    <div class="item-wrapper">
-                        <div class="item">
-                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
-                            <h2>Title 2</h2>
-                            <div class="mb-lg-4 text-success">Sub title</div>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
-                        </div>
-                        <div class="item">
-                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
-                            <h2>Title 2</h2>
-                            <div class="mb-lg-4 text-success">Sub title</div>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
-                        </div>
-                    </div>
-                    <div class="item-wrapper">
-                        <div class="item">
-                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-1.png" alt=""></div>
-                            <h2>Cây xà nu</h2>
-                            <div class="mb-lg-4 text-success">Trồng 3 tháng</div>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <button class="btn btn-leaf" data-toggle="modal" data-target="#detail">Danh Sách</button>
-                        </div>
-                        <div class="item">
-                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-2.png" alt=""></div>
-                            <h2>Title 2</h2>
-                            <div class="mb-lg-4 text-success">Sub title</div>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <button class="btn btn-leaf btn-leaf-2" data-toggle="modal" data-target="#detail">Danh Sách</button>
-                        </div>
-                    </div>
-                    <div class="item-wrapper">
-                        <div class="item">
-                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
-                            <h2>Title 2</h2>
-                            <div class="mb-lg-4 text-success">Sub title</div>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
-                        </div>
-                        <div class="item">
-                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
-                            <h2>Title 2</h2>
-                            <div class="mb-lg-4 text-success">Sub title</div>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
-                        </div>
-                    </div>
-                    <div class="item-wrapper">
-                        <div class="item">
-                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-1.png" alt=""></div>
-                            <h2>Cây xà nu</h2>
-                            <div class="mb-lg-4 text-success">Trồng 3 tháng</div>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <button class="btn btn-leaf" data-toggle="modal" data-target="#detail">Danh Sách</button>
-                        </div>
-                        <div class="item">
-                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-2.png" alt=""></div>
-                            <h2>Title 2</h2>
-                            <div class="mb-lg-4 text-success">Sub title</div>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <button class="btn btn-leaf btn-leaf-2" data-toggle="modal" data-target="#detail">Danh Sách</button>
-                        </div>
-                    </div>
-                    <div class="item-wrapper">
-                        <div class="item">
-                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
-                            <h2>Title 2</h2>
-                            <div class="mb-lg-4 text-success">Sub title</div>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
-                        </div>
-                        <div class="item">
-                            <div class="icon mb-lg-5"><img src="./assets/images/leaf-3.png" alt=""></div>
-                            <h2>Title 2</h2>
-                            <div class="mb-lg-4 text-success">Sub title</div>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <button class="btn btn-leaf btn-leaf-3" data-toggle="modal" data-target="#detail">Danh Sách</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="tree-information shadow position-relative">
-        <div class="container py-10">
-            <div class="section-title text-center mb-5" id="tree-information">Cách trồng cây</div>
-            <div class="content">
-                <div class="image"><img src="./assets/images/tree-information.png" alt=""></div>
-                <div class="item d-flex align-items-center">
-                    <div class="icon flaticon-sprinkler-1"></div>
-                    <div class="text">
-                        <h3>Title 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda deserunt</p>
-                    </div>
-                </div>
-                <div class="item d-flex align-items-center">
-                    <div class="icon flaticon-farming-and-gardening-1"></div>
-                    <div class="text">
-                        <h3>Title 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda deserunt</p>
-                    </div>
-                </div>
-                <div class="item d-flex align-items-center">
-                    <div class="icon flaticon-wheelbarrow-1"></div>
-                    <div class="text">
-                        <h3>Title 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda deserunt</p>
-                    </div>
-                </div>
-                <div class="item d-flex align-items-center">
-                    <div class="icon flaticon-farming-and-gardening"></div>
-                    <div class="text">
-                        <h3>Title 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda deserunt</p>
-                    </div>
-                </div>
-                <div class="item d-flex align-items-center">
-                    <div class="icon flaticon-gardening-1"></div>
-                    <div class="text">
-                        <h3>Title 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda deserunt</p>
-                    </div>
-                </div>
-                <div class="item d-flex align-items-center">
-                    <div class="icon flaticon-witch"></div>
-                    <div class="text">
-                        <h3>Title 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda deserunt</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="testim" class="testim pt-10">
-        <div class="section-title text-center mb-5">Hãy tham gia cùng chúng tôi</div>
-        <div class="testim-cover">
-            <div class="wrap">
-
-                <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-                <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
-                <ul id="testim-dots" class="dots">
-                    <li class="dot active"></li><!--
-                    --><li class="dot"></li><!--
-                    --><li class="dot"></li><!--
-                    --><li class="dot"></li><!--
-                    --><li class="dot"></li>
-                </ul>
-                <div id="testim-content" class="cont">
-
-                    <div class="active">
-                        <div class="img"><img src="https://picsum.photos/id/1/200/200" alt=""></div>
-                        <h2>Lorem P. Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div>
-
-                    <div>
-                        <div class="img"><img src="https://picsum.photos/id/2/200/200" alt=""></div>
-                        <h2>Mr. Lorem Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div>
-
-                    <div>
-                        <div class="img"><img src="https://picsum.photos/id/3/200/200" alt=""></div>
-                        <h2>Lorem Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div>
-
-                    <div>
-                        <div class="img"><img src="https://picsum.photos/id/4/200/200" alt=""></div>
-                        <h2>Lorem De Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div>
-
-                    <div>
-                        <div class="img"><img src="https://picsum.photos/id/5/200/200" alt=""></div>
-                        <h2>Ms. Lorem R. Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div>
-
-                </div>
-
-            </div>
+            <div class="section-title text-center mb-5" id="three-item">Các loại cây phổ biến</div>
         </div>
     </section>
 
@@ -301,140 +210,6 @@
     </footer>
 </div>
 
-<div class="modal fade" id="treeConfiguration">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title" id="myModalLabel">Chọn cây</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card overflow-hidden">
-                                <div class="text-center">
-                                    <img src="./assets/images/leaf-1.png" class="card-img-top">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Item #1</h5>
-                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="text-center"><a href="javascript:void(0);" class="btn btn-leaf" data-toggle="modal" data-target="#detail1">Chọn</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card overflow-hidden">
-                                <div class="text-center">
-                                    <img src="./assets/images/leaf-1.png" class="card-img-top">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Item #1</h5>
-                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card overflow-hidden">
-                                <div class="text-center">
-                                    <img src="./assets/images/leaf-1.png" class="card-img-top">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Item #1</h5>
-                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card overflow-hidden">
-                                <div class="text-center">
-                                    <img src="./assets/images/leaf-1.png" class="card-img-top">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Item #1</h5>
-                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card overflow-hidden">
-                                <div class="text-center">
-                                    <img src="./assets/images/leaf-1.png" class="card-img-top">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Item #1</h5>
-                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card overflow-hidden">
-                                <div class="text-center">
-                                    <img src="./assets/images/leaf-1.png" class="card-img-top">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Item #1</h5>
-                                    <p class="card-text text-center small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="text-center"><a href="detail.html" class="btn btn-leaf">Chọn</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="detail">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title">Thông tin chi tiết</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <section class="product-detail">
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <div class="image border">
-                                    <img src="./assets/images/plant-1.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="register">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title">Đăng ký thông tin</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="./assets/js/testimonial.js"></script>
 <script src="./assets/js/treeAtHome.js"></script>
 </body>
 </html>
