@@ -110,14 +110,14 @@
 
 // FOOTER
 .footer {
-  height: 55px;
-  background: #5c7641;
+  height: 45px;
+  background: #263521;
 
   .icons {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 55px;
+    height: 45px;
 
     img {
       width: 26px;
@@ -128,7 +128,7 @@
   }
 
   &-right {
-    height: 55px;
+    height: 45px;
     box-sizing: border-box;
     display: flex;
     align-items: center;

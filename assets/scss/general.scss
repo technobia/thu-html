@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 /*FOOTER*/
 
 footer {
-  background: #5c7641;
+  background: #263521;
   color: white;
   margin-top:100px;
 }
@@ -157,12 +157,32 @@ footer a:hover {
 .copy {
   font-size: 12px;
   padding: 10px;
-  border-top: 1px solid #FFFFFF;
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .footer-middle {
-  padding-top: 2em;
+  padding-top: 4em;
   color: white;
+}
+
+footer .custom-background {
+  position: relative;
+  padding-bottom: 2rem;
+
+  &:before {
+    content: '';
+    background: url('../images/bg-footer.jpg') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: -64px;
+    width: 100vw;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
 }
 
 
