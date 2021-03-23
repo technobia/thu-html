@@ -167,3 +167,61 @@ $secondary-color: #7abf18;
     }
   }
 }
+
+
+// POPULAR SECTION
+.popular-section {
+  .plants .item {
+    margin-bottom: 30px;
+
+    .body {
+      .image {
+        width: 100%;
+        height: 220px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .content {
+        padding: 20px;
+
+        p {
+          min-height: 50px;
+        }
+
+        button:focus {
+          outline: 0;
+        }
+      }
+    }
+  }
+}
+
+// POPULAR SECTION
+.promo-section {
+  height: 200px;
+  background: url('../images/bg-promo.jpg') no-repeat center;
+  background-size: cover;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+  }
+
+  h1 {
+    color: white;
+    margin: 0;
+  }
+}
+
+
+// FOOTER
+.mainfooter {
+  margin-top: 0;
+}

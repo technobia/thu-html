@@ -38,6 +38,10 @@ h1, h2, h3, h4, h5, h6 {
   &-3 {
     background: #e3aa50;
   }
+
+  &.btn-sm {
+    height: 40px;
+  }
 }
 
 // Sections
