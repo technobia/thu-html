@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
 $font-text: 'Comfortaa', cursive;
-$font-heading: 'Dancing Script', cursive;
+$font-heading: 'Comfortaa', cursive;
 
 html, body {
   font-family: $font-text;
@@ -44,10 +43,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 // Sections
 .section-title {
   font-family: $font-heading;
-  font-size: 60px;
+  font-size: 48px;
   position: relative;
 
   &:before {
@@ -67,8 +70,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 128px;
   padding-bottom: 128px;
 }
-
-
+.pt-10 {
+  padding-top: 128px;
+}
+.pb-10 {
+  padding-bottom: 128px;
+}
 
 
 //////////// MAIN MENU ////////////
@@ -89,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 
   &-nav {
     .nav-item {
-      margin: 0 15px;
+      margin: 0 3px;
       border: 2px solid transparent;
       transition: text-decoration .25s ease-in, border-color .25s ease-in, border-radius .25s ease-in;
       text-align: center;
@@ -102,7 +109,14 @@ h1, h2, h3, h4, h5, h6 {
     .nav-link {
       font-weight: bold;
       color: white !important;
+      text-transform: uppercase;
+      font-size: 13px;
     }
+  }
+}
+@media (min-width: 992px) {
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 10px;
   }
 }
 @media (min-width: 1200px) {
@@ -120,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 
     &-nav {
       .nav-item {
-        padding: 0 30px;
+        padding: 0 15px;
 
         &:hover {
           text-decoration: none;
@@ -129,6 +143,11 @@ h1, h2, h3, h4, h5, h6 {
         }
       }
     }
+  }
+}
+@media (min-width: 1440px) {
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 13px;
   }
 }
 

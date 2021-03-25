@@ -24,16 +24,6 @@ $secondary-color: #7abf18;
     right: -75px;
     bottom: 0;
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, .5)
-    }
-
     video {
       width: 100%;
       height: 100%;
@@ -45,10 +35,8 @@ $secondary-color: #7abf18;
   .content {
     text-align: center;
     position: relative;
-    z-index: 1;
 
     .title {
-      color: white;
       margin-bottom: 24px;
     }
   }
@@ -57,6 +45,110 @@ $secondary-color: #7abf18;
   .hero-section {
     .video {
       right: 0;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .hero-section .video:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 96px;
+    background: rgba(0, 0, 0, .5);
+  }
+}
+// ADS SECTION
+.ads-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+@media (min-width: 1200px) {
+  .ads-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+// EVENT SECTION
+.event-section {
+  margin-bottom: 32px;
+
+  .background {
+    background: #c4d8ab;
+  }
+
+  .item {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      .content {
+        opacity: 1;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .content {
+      opacity: 0;
+      position: absolute;
+      background: rgba(0, 0, 0, .5);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: .25s ease;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .event-section {
+    margin-bottom: 64px;
+  }
+}
+
+
+// EVENT CUSTOM
+.custom-event-section {
+  .item {
+    height: 250px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover img {
+      transform: scale(1.02);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .25s ease;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .custom-event-section {
+    .item {
+      height: 350px;
+
+      &.big {
+        height: 700px;
+      }
     }
   }
 }

@@ -31,13 +31,26 @@
                     <a class="nav-link" href="index.html">Trang chủ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="tree-at-home.html">Trồng cây tại nhà</a>
+                    <div class="nav-link cursor-pointer" data-toggle="modal" data-target="#aboutUs">Về chúng tôi</div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="tree-at-forest.html">Trồng cây trong rừng</a>
+                    <a class="nav-link" href="#">Các hoạt động</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sự kiện</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hướng dẫn trồng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Liên hệ</a>
+                </li>
+                <li class="nav-item d-none d-lg-inline-block text-white px-0 pt-1 m-0">|</li>
+                <li class="nav-item">
+                    <div class="nav-link cursor-pointer" data-toggle="modal" data-target="#register">Đăng nhập</div>
                 </li>
             </ul>
         </div>
@@ -49,15 +62,94 @@
         </div>
         <div class="container">
             <div class="content">
-                <h2 class="title">Planting seeds in your home then delivery trees to forests</h2>
+                <h4 class="title font-text">Planting seeds in your home then delivery trees to forests</h4>
                 <a href="#three-item" class="btn btn-leaf">Plant a tree now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="ads-section">
+        <div class="container">
+            <p class="m-0" style="font-size: 18px;">
+                Forest and City là một tổ chức giúp hồi sinh những khu rừng tự nhiên, bằng cách khuyến khích người dân sinh sống tại thành phố, gieo trồng hạt giống của thực vật thân gỗ tại nhà, sau khi cây con đủ lớn, hoặc vượt quá chiều cao cho phép trong căn hộ chung cư hoặc khoảng sân trước vườn nhà, bạn sẽ đăng kí đem cây con của mình về những khu rừng nghèo kiệt để trồng như một cách giúp rừng thêm cây. Tham gia cùng chúng tôi ngay hôm nay.
+            </p>
+        </div>
+    </section>
+
+    <section class="event-section">
+        <div class="container-fluid">
+            <div class="section-title text-center mb-5">Các hoạt động</div>
+        </div>
+        <div class="container-fluid background">
+            <div class="row py-5">
+                <div class="col-lg-2 p-0 offset-lg-1">
+                    <div class="item">
+                        <img src="./assets/images/tree-at-home-event-1.jpg" alt="">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 p-0">
+                    <div class="item">
+                        <img src="./assets/images/tree-at-home-event-2.jpg" alt="">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 p-0">
+                    <div class="item">
+                        <img src="./assets/images/tree-at-home-event-3.jpg" alt="">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 p-0">
+                    <div class="item">
+                        <img src="./assets/images/tree-at-home-event-4.jpg" alt="">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 p-0">
+                    <div class="item">
+                        <img src="./assets/images/tree-at-home-event-5.jpg" alt="">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="custom-event-section shadow">
+        <div class="container py-10">
+            <div class="section-title text-center mb-5">Sự kiện nổi bật</div>
+            <div class="row">
+                <div class="col-lg-5 p-0">
+                    <div class="item big">
+                        <img src="./assets/images/event-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 p-0">
+                    <div class="item">
+                        <img src="./assets/images/event-2.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/images/tree-at-home-event-1.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="three-item section-wrapper shadow">
         <div class="container py-10">
-            <div class="section-title text-center mb-5" id="three-item">Các loại lá</div>
+            <div class="section-title text-center mb-5" id="three-item">Hướng dẫn cách trồng cây</div>
             <div class="row mx-lg-n5">
                 <div class="owl-carousel owl-theme">
                     <div class="item">
@@ -250,6 +342,39 @@
     </footer>
 </div>
 
+<div class="modal fade" id="aboutUs">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title font-text text-uppercase w-100 text-center m-0">Về chúng tôi</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-5">
+                <p class="text-center mb-5">
+                    <img src="./assets/images/about-us.jpg" alt="" style="width: 100%; height: 100%; object-fit: contain">
+                </p>
+                <p>
+                    Forest and City là một tổ chức giúp hồi sinh những khu rừng tự nhiên, bằng cách khuyến khích người dân sinh sống tại thành phố, gieo trồng hạt giống của thực vật thân gỗ tại nhà, sau khi cây con đủ lớn, hoặc vượt quá chiều cao cho phép trong căn hộ chung cư hoặc khoảng sân trước vườn nhà, bạn sẽ đăng kí đem cây con của mình về những khu rừng nghèo kiệt để trồng như một cách giúp rừng thêm cây.
+                </p>
+                <p>
+                    Forest and City chọn người dân sinh sống tại thành phố để phát triển dự án trồng rừng này với mong muốn tăng mảng xanh trong thành phố, giảm khí thải ô nhiễm mỗi ngày. Ngoài ra, còn giúp mọi người ý thức việc khôi phục và bảo vệ thiên nhiên.
+                </p>
+                <p>
+                    Vì sao Forest and City chọn trồng những cây thân gỗ? Vì những cây thân gỗ phát triển sẽ giúp đất giữ nước, giảm tình trạng lũ lụt và sạt lở đầu nguồn, giữ độ ẩm cho đất, từ đó tạo điều kiện phát triển những thực vật táng vừa và thấp. Thêm vào đó, trồng những thực vật thân gỗ khác loài sẽ giúp đa dạng hệ thực vật kéo theo hệ sinh thái của rừng cũng đa dạng theo. Kết quả, rừng sẽ hồi phục mỗi ngày, trả lại RỪNG VÀNG như thiên nhiên đã từng tươi đẹp.
+                </p>
+                <p>
+                    Tham gia cùng chúng tôi sẽ mang lại nhiều lợi ích cho bạn, cho các thành viên trong gia đình và cho chính ngôi nhà của bạn. Trồng cây tạo thêm mảng xanh, không khí mát mẻ trong nhà, cũng có thể trang trí cho ngôi nhà thêm sinh khí, giảm bớt khí thải cho môi trường đang sinh sống. Ngoài ra, bạn và gia đình có thêm kiến thức và kinh nghiệm về thực vật, giúp các con của mình biết được cách chăm sóc cây, mục đích trồng cây, lợi ích cây mang lại và cho các con biết được chúng ta cần phải bảo vệ cây và bảo vệ rừng tự nhiên.
+                </p>
+                <p class="text-center" style="font-size: 48px; color: #3d9b19">
+                    "Plan Tree for the future"
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="treeConfiguration">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -362,6 +487,38 @@
                         </div>
                     </section>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="register">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title font-text text-uppercase w-100 text-center m-0">Đăng nhập</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <form>
+                    <div class="form-group">
+                        <label for="email">Tên đăng nhập</label>
+                        <input type="text" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mật khẩu</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberme">
+                        <label class="form-check-label" for="rememberme">Ghi nhớ cho lần sau</label>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-leaf">Đăng nhập</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
