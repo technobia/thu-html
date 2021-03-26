@@ -33,17 +33,17 @@
                 <li class="nav-item">
                     <div class="nav-link cursor-pointer" data-toggle="modal" data-target="#aboutUs">Về chúng tôi</div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Các hoạt động</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sự kiện</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Các hoạt động
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Sự kiện</a>
+                        <a class="dropdown-item" href="#">Blogs</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Hướng dẫn trồng</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blogs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Liên hệ</a>
@@ -76,7 +76,7 @@
         </div>
     </section>
 
-    <section class="event-section">
+    <section id="eventSection" class="event-section">
         <div class="container-fluid">
             <div class="section-title text-center mb-5">Các hoạt động</div>
         </div>
@@ -126,7 +126,7 @@
         </div>
     </section>
     
-    <section class="custom-event-section shadow">
+    <section id="customEventSection" class="custom-event-section">
         <div class="container py-10">
             <div class="section-title text-center mb-5">Sự kiện nổi bật</div>
             <div class="row">
@@ -147,7 +147,7 @@
         </div>
     </section>
 
-    <section class="three-item section-wrapper shadow">
+    <section id="threeItem" class="three-item section-wrapper shadow">
         <div class="container py-10">
             <div class="section-title text-center mb-5" id="three-item">Hướng dẫn cách trồng cây</div>
             <div class="row mx-lg-n5">
@@ -199,7 +199,7 @@
         </div>
     </section>
 
-    <section class="tree-information shadow position-relative">
+    <section id="treeInformation" class="tree-information shadow position-relative">
         <div class="container py-10">
             <div class="section-title text-center mb-5" id="tree-information">Cách trồng cây</div>
             <div class="content">
@@ -267,7 +267,7 @@
                 <div id="testim-content" class="cont">
 
                     <div class="active">
-                        <div class="img"><img src="https://picsum.photos/id/1/200/200" alt=""></div>
+                        <div class="img"><img src="./assets/images/testimonial-1.jpg" alt=""></div>
                         <h2>Lorem P. Ipsum</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                     </div>
@@ -340,6 +340,36 @@
             </div>
         </div>
     </footer>
+</div>
+
+<div id="shortcut">
+    <ul>
+        <li>
+            <a href="#eventSection">
+                <span class="mr-3">Các hoạt động</span><i class="icon flaticon-sprout-3"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#customEventSection">
+                <span class="mr-3">Sự kiện nổi bật</span><i class="icon flaticon-trophy"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#threeItem">
+                <span class="mr-3">Hướng dẫn cách trồng cây</span><i class="icon flaticon-book"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#treeInformation">
+                <span class="mr-3">Cách trồng cây</span><i class="icon flaticon-sprout"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#testim">
+                <span class="mr-3">Blogs</span><i class="icon flaticon-two-quotes"></i>
+            </a>
+        </li>
+    </ul>
 </div>
 
 <div class="modal fade" id="aboutUs">

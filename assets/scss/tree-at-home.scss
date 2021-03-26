@@ -1,5 +1,6 @@
 $primary-color: #3d9b19;
 $secondary-color: #7abf18;
+$footer-color: #263521;
 
 #tree-at-home {
   min-height: 100vh;
@@ -24,6 +25,16 @@ $secondary-color: #7abf18;
     right: -75px;
     bottom: 0;
 
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, .5)
+    }
+
     video {
       width: 100%;
       height: 100%;
@@ -35,8 +46,10 @@ $secondary-color: #7abf18;
   .content {
     text-align: center;
     position: relative;
+    z-index: 1;
 
     .title {
+      color: white;
       margin-bottom: 24px;
     }
   }
@@ -46,17 +59,6 @@ $secondary-color: #7abf18;
     .video {
       right: 0;
     }
-  }
-}
-@media (min-width: 1200px) {
-  .hero-section .video:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 96px;
-    background: rgba(0, 0, 0, .5);
   }
 }
 // ADS SECTION
@@ -73,16 +75,15 @@ $secondary-color: #7abf18;
 
 // EVENT SECTION
 .event-section {
-  margin-top: 32px;
   margin-bottom: 32px;
 
   .background {
-    background: #c4d8ab;
+    background: #263521 url('../images/bg-footer.jpg') no-repeat center;
   }
 
   .item {
     width: 100%;
-    height: 300px;
+    height: 250px;
     position: relative;
     cursor: pointer;
 
@@ -119,7 +120,6 @@ $secondary-color: #7abf18;
 @media (min-width: 1200px) {
   .event-section {
     margin-bottom: 64px;
-    margin-top: 64px;
   }
 }
 
@@ -374,6 +374,75 @@ $secondary-color: #7abf18;
       max-width: 100%;
       height: 500px;
       object-fit: contain;
+    }
+  }
+}
+
+
+// SHORTCUT
+#shortcut {
+  display: none;
+}
+@media (min-width: 1200px) {
+  #shortcut {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 3;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        text-align: right;
+        padding: 10px 0;
+        cursor: pointer;
+        transition: .25s ease;
+
+        &:hover {
+          span {
+            right: 100%;
+            opacity: 1;
+            color: $primary-color;
+          }
+
+          i {
+            color: $primary-color;
+          }
+        }
+
+        a {
+          width: 24px;
+          height: 26px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          text-decoration: none;
+          position: relative;
+        }
+
+        span {
+          opacity: 0;
+          transition: .25s ease;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          white-space: nowrap;
+          pointer-events: none;
+        }
+
+        i {
+          color: $secondary-color;
+          font-size: 24px;
+          transition: .25s ease;
+        }
+      }
     }
   }
 }
