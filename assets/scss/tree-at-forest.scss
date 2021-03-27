@@ -10,90 +10,92 @@ $secondary-color: #7abf18;
 //////////// NAVBAR ////////////
 .navbar {
   background: rgba(0, 0, 0, .5) !important;
+  z-index: 2 !important;
 }
 
 //////////// HERO SECTION ////////////
 .hero-section {
-  height: 768px;
+  height: 70vh;
   width: 100%;
   overflow: hidden;
   position: relative;
 
-  .map {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1920px;
-    height: 768px;
+  .owl-carousel {
+    .owl-stage {
+      height: 70vh;
+    }
+
+    .owl-item {
+      img {
+        width: 100vw;
+        height: 70vh;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .owl-dots {
+      margin-top: -50px !important;
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .hero-section {
+    height: 100vh;
+
+    .owl-carousel {
+      .owl-stage {
+        height: 100vh;
+      }
+
+      .owl-item img {
+        height: 100vh;
+      }
+    }
+  }
+}
+
+// ACTIVITIES SECTION
+.activities-section {
+  background: #e5e5e5;
+  .card {
+    border-radius: 6px;
+
+    &-img {
+      position: relative;
+      height: 180px;
+
+      img {
+        position: absolute;
+        width: 90%;
+        height: 200px;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: cover;
+        border-radius: 6px;
+        box-shadow: 0 16px 38px -12px rgb(0 0 0 / 56%), 0 4px 25px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+      }
+    }
+  }
+}
+
+
+// PROGRAM SECTION
+.program-section {
+  .item {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 100vh;
+    margin: 0 auto;
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center;
-    }
-
-    .spots {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-
-      &-item {
-        cursor: pointer;
-        position: absolute;
-        padding: 5px;
-        border: 0;
-        border-radius: 100vh;
-        overflow: hidden;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
-        background: teal;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        &:focus {
-          outline: none;
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
-        }
-      }
-    }
-  }
-
-  .btn-register {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 15px;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media (min-width: 992px) {
-  .hero-section {
-    padding-top: 130px;
-
-    .map {
-      .form {
-        top: 152px;
-        bottom: 10px;
-        left: auto;
-        right: 10px;
-        transform: translateX(0);
-        width: 500px;
-      }
     }
   }
 }
@@ -169,9 +171,41 @@ $secondary-color: #7abf18;
   }
 }
 
+// FORESTS SECTION
+.forests-section {
+  .container-fluid {
+    position: relative;
+
+    .background {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 50%;
+      z-index: -1;
+      background: url('../images/bg-forest-section.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    .item {
+      margin: auto;
+      text-align: center;
+
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 100vh;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
 
 // POPULAR SECTION
 .popular-section {
+  background: #f4f4f4;
   .plants .item {
     margin-bottom: 30px;
 
@@ -189,6 +223,7 @@ $secondary-color: #7abf18;
 
       .content {
         padding: 20px;
+        background: white;
 
         p {
           min-height: 50px;
