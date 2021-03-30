@@ -86,16 +86,16 @@ $secondary-color: #7abf18;
 // PROGRAM SECTION
 .program-section {
   .item {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 100vh;
-    margin: 0 auto;
 
     img {
-      width: 100%;
-      height: 100%;
+      border-radius: 100vh;
+      width: 300px;
+      height: 300px;
       object-fit: cover;
+    }
+
+    button {
+      outline: none;
     }
   }
 }

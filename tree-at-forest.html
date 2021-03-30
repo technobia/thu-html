@@ -19,7 +19,7 @@
 <body>
 <div id="tree-at-forest" class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
-        <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="Logo"></a>
+        <a class="navbar-brand" href="index.html"><img src="./assets/images/logo.svg" alt="Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
                 aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,11 +31,21 @@
                     <a class="nav-link" href="index.html">Trang chủ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="tree-at-home.html">Trồng cây tại nhà</a>
+                    <a class="nav-link" href="#programSection">Chương trình tham gia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="tree-at-forest.html">Trồng cây trong rừng</a>
+                    <a class="nav-link" href="#activitiesSection">Các hoạt động</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#forestsSection">Các loại rừng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#trainingSection">Training Online</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blogsSection">Blogs</a>
+                </li>
+                <li class="nav-item d-none d-lg-inline-block text-white px-0 pt-1 m-0">|</li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Liên hệ</a>
                 </li>
@@ -70,18 +80,21 @@
             <div class="section-title text-center mb-5" id="programSection">Chương trình tham gia</div>
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="item">
-                        <img src="./assets/images/program-1.jpg" alt="">
+                    <div class="item text-center">
+                        <img class="cursor-pointer" data-target="#detail" data-toggle="modal" src="./assets/images/program-1.jpg" alt="">
+                        <button class="btn-leaf btn-leaf-2 border-0 mt-3" data-target="#detail" data-toggle="modal">Cá nhân</button>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="item">
-                        <img src="./assets/images/program-2.jpg" alt="">
+                    <div class="item text-center">
+                        <img class="cursor-pointer" data-target="#detail" data-toggle="modal" src="./assets/images/program-2.jpg" alt="">
+                        <button class="btn-leaf btn-leaf-2 border-0 mt-3" data-target="#detail" data-toggle="modal">Doanh nghiệp</button>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="item">
-                        <img src="./assets/images/program-3.jpg" alt="">
+                    <div class="item text-center">
+                        <img class="cursor-pointer" data-target="#detail" data-toggle="modal" src="./assets/images/program-3.jpg" alt="">
+                        <button class="btn-leaf btn-leaf-2 border-0 mt-3" data-target="#detail" data-toggle="modal">Quyên góp</button>
                     </div>
                 </div>
             </div>
@@ -132,36 +145,36 @@
         </div>
     </section>
 
-    <section class="section-wrapper forests-section">
+    <section class="section-wrapper forests-section" id="forestsSection">
         <div class="container-fluid">
             <div class="background"></div>
             <div class="row py-5">
                 <div class="col-lg-2 p-0 offset-lg-1">
-                    <div class="item">
+                    <div class="item cursor-pointer" data-target="#detail" data-toggle="modal">
                         <img src="./assets/images/forest-1.jpg" alt="" class="shadow">
                         <h5 class="mt-4 text-white title text-center">Rừng Bạch Mã</h5>
                     </div>
                 </div>
                 <div class="col-lg-2 p-0">
-                    <div class="item">
+                    <div class="item cursor-pointer" data-target="#detail" data-toggle="modal">
                         <img src="./assets/images/forest-2.jpg" alt="" class="shadow">
                         <h5 class="mt-4 text-white title text-center">Rừng Bến En</h5>
                     </div>
                 </div>
                 <div class="col-lg-2 p-0">
-                    <div class="item">
+                    <div class="item cursor-pointer" data-target="#detail" data-toggle="modal">
                         <img src="./assets/images/forest-3.jpg" alt="" class="shadow">
                         <h5 class="mt-4 text-white title text-center">Bidoup Núi Bà</h5>
                     </div>
                 </div>
                 <div class="col-lg-2 p-0">
-                    <div class="item">
+                    <div class="item cursor-pointer" data-target="#detail" data-toggle="modal">
                         <img src="./assets/images/forest-4.jpg" alt="" class="shadow">
                         <h5 class="mt-4 text-white title text-center">Rừng Xuân Liên</h5>
                     </div>
                 </div>
                 <div class="col-lg-2 p-0">
-                    <div class="item">
+                    <div class="item cursor-pointer" data-target="#detail" data-toggle="modal">
                         <img src="./assets/images/forest-5.jpg" alt="" class="shadow">
                         <h5 class="mt-4 text-white title text-center">Rừng Nam Cát Tiên</h5>
                     </div>
@@ -169,29 +182,6 @@
             </div>
         </div>
     </section>
-
-<!--    <section class="events-section">-->
-<!--        <div class="container">-->
-<!--            <div class="grid">-->
-<!--                <div class="item rounded">-->
-<!--                    <img src="./assets/images/event-1.jpg" alt="">-->
-<!--                    <div class="content">-->
-<!--                        <h2>Event title #1</h2>-->
-<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias architecto</p>-->
-<!--                    </div>-->
-<!--                    <button class="btn btn-leaf">Chi tiết</button>-->
-<!--                </div>-->
-<!--                <div class="item rounded item-right">-->
-<!--                    <img src="./assets/images/event-2.jpg" alt="">-->
-<!--                    <div class="content">-->
-<!--                        <h2>Event title #2</h2>-->
-<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias architecto</p>-->
-<!--                    </div>-->
-<!--                    <button class="btn btn-leaf">Chi tiết</button>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
 
     <section class="popular-section">
         <div class="container py-10">
@@ -234,7 +224,7 @@
         </div>
     </section>
 
-    <section class="promo-section-2 pb-10">
+    <section class="promo-section-2 pb-10" id="blogsSection">
         <div class="container">
             <div class="row flex-column-reverse flex-lg-row">
                 <div class="col-lg-6">
@@ -265,11 +255,13 @@
                         <div class="footer-pad text-center text-lg-left">
                             <h4>Danh mục</h4>
                             <ul class="list-unstyled">
-                                <li><a href="index.html"></a></li>
-                                <li><a href="#three-item">Trang chủ</a></li>
-                                <li><a href="#tree-information">Các loại lá</a></li>
-                                <li><a href="#tree-information">Cách trồng cây</a></li>
-                                <li><a href="#">Liên hệ</a></li>
+                                <li><a href="index.html">Trang chủ</a></li>
+                                <li><a href="#programSection">Chương trình tham gia</a></li>
+                                <li><a href="#activitiesSection">Các hoạt động</a></li>
+                                <li><a href="#forestsSection">Các loại rừng</a></li>
+                                <li><a href="#trainingSection">Training Online</a></li>
+                                <li><a href="#blogsSection">Blogs</a></li>
+                                <li><a href="contact.html">Liên hệ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -296,6 +288,22 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title">Danh sách giam gia trồng cây</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Coming soon...
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="detail">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Modal Title</h2>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
