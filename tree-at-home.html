@@ -130,13 +130,13 @@
         <div class="container py-10">
             <div class="section-title text-center mb-5">Sự kiện nổi bật</div>
             <div class="grid">
-                <div class="item shadow big">
+                <div class="item shadow big" data-target="#event-1" data-toggle="modal">
                     <img src="./assets/images/custom-event-1.jpg" alt="">
                 </div>
-                <div class="item shadow">
+                <div class="item shadow" data-target="#event" data-toggle="modal">
                     <img src="./assets/images/custom-event-2.jpg" alt="">
                 </div>
-                <div class="item shadow">
+                <div class="item shadow" data-target="#event" data-toggle="modal">
                     <img src="./assets/images/tree-at-home-event-1.jpg" alt="">
                 </div>
             </div>
@@ -552,6 +552,49 @@
                         <button type="submit" class="btn btn-leaf">Đăng nhập</button>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="event-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Sự kiện nổi bật</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img src="./assets/images/custom-event-1.jpg" alt="" style="width: 100%;">
+                        </div>
+                        <div class="col-lg-9">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, distinctio dolorem, dolorum eius
+                                error exercitationem facilis fuga labore maxime minus nobis perferendis ratione similique,
+                                sint sit tempora vel velit veritatis?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="event">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Sự kiện nổi bật</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Coming soon...
             </div>
         </div>
     </div>
