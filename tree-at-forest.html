@@ -33,17 +33,21 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#programSection">Chương trình tham gia</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#activitiesSection">Các hoạt động</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Các hoạt động
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#activitiesSection">Sự kiện</a>
+                        <a class="dropdown-item" href="#blogsSection">Blogs</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#forestsSection">Các loại rừng</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#trainingSection">Training Online</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#blogsSection">Blogs</a>
                 </li>
                 <li class="nav-item d-none d-lg-inline-block text-white px-0 pt-1 m-0">|</li>
                 <li class="nav-item">
@@ -81,20 +85,29 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="item text-center">
-                        <img class="cursor-pointer" data-target="#detail" data-toggle="modal" src="./assets/images/program-1.jpg" alt="">
-                        <button class="btn-leaf btn-leaf-2 border-0 mt-3" data-target="#detail" data-toggle="modal">Cá nhân</button>
+                        <img class="cursor-pointer" data-target="#detail" data-toggle="modal"
+                             src="./assets/images/program-1.jpg" alt="">
+                        <button class="btn-leaf btn-leaf-2 border-0 mt-3" data-target="#programSection-detail-1"
+                                data-toggle="modal">Cá nhân
+                        </button>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="item text-center">
-                        <img class="cursor-pointer" data-target="#detail" data-toggle="modal" src="./assets/images/program-2.jpg" alt="">
-                        <button class="btn-leaf btn-leaf-2 border-0 mt-3" data-target="#detail" data-toggle="modal">Doanh nghiệp</button>
+                        <img class="cursor-pointer" data-target="#detail" data-toggle="modal"
+                             src="./assets/images/program-2.jpg" alt="">
+                        <button class="btn-leaf btn-leaf-2 border-0 mt-3" data-target="#programSection-detail-2"
+                                data-toggle="modal">Doanh nghiệp
+                        </button>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="item text-center">
-                        <img class="cursor-pointer" data-target="#detail" data-toggle="modal" src="./assets/images/program-3.jpg" alt="">
-                        <button class="btn-leaf btn-leaf-2 border-0 mt-3" data-target="#detail" data-toggle="modal">Quyên góp</button>
+                        <img class="cursor-pointer" data-target="#detail" data-toggle="modal"
+                             src="./assets/images/program-3.jpg" alt="">
+                        <button class="btn-leaf btn-leaf-2 border-0 mt-3" data-target="#programSection-detail-3"
+                                data-toggle="modal">Quyên góp
+                        </button>
                     </div>
                 </div>
             </div>
@@ -258,6 +271,8 @@
                         <ul class="social-network social-circle">
                             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-instagram"></i></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -317,6 +332,322 @@
             </div>
             <div class="modal-body">
                 Coming soon...
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="programSection-detail-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="banner">
+                    <img src="./assets/images/program-section-detail-1.jpg" alt="" class="background">
+                    <img src="./assets/images/logo.svg" alt="" class="logo">
+                    <div class="title">Trồng rừng cho tương lai<br/>Plan tree for future</div>
+                </div>
+                <div class="content shadow">
+                    <p>Cảm ơn bạn đã Ủng hộ chương trình TRỒNG CÂY CHO TƯƠNG LAI cùng Forest and City. Khi bạn tham gia
+                        trồng cây con tại khu rừng đã chọn, bạn sẽ nhận được 1 mã số cho cây con của bạn (mã số này để
+                        xem tình trạng cây con và liên lạc với người báo cáo), được cập nhật lên hệ thống, website của
+                        chúng tôi. Bạn có thể thêm 1 lời nhắn gồm 20 kí tự nó sẽ hiện lên trên website trong khu rừng
+                        tương ứng bạn đã trồng. Tình trạng cây được cập nhật trong 5 năm</p>
+                    <p>Nếu bạn không trồng cây con của mình, mà chỉ muốn quyên góp để chương trình trồng cây thay bạn,
+                        xem chi tiết <span class="cursor-pointer text-success" data-dismiss="modal" data-toggle="modal"
+                                           data-target="#programSection-detail-3">tại đây</span>:</p>
+                    <p><strong>Hướng dẫn quy trình TRỒNG CÂY</strong></p>
+                    <ul>
+                        <li>Điền thông tin theo form bên dưới</li>
+                        <li>Nhận mã số cây con từ chương trình thông qua email</li>
+                        <li>Chương trình sẽ thông báo ngày giờ và biểu phí các sự kiện trồng rừng trực tiếp thông qua
+                            email và website chương trình.
+                        </li>
+                        <li>xác nhận thời gian và tham gia các hoạt động thú vị tại rừng</li>
+                    </ul>
+                    <h6 class="mt-4 mb-2"><strong>Đăng ký thông tin</strong></h6>
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <small>Tên của bạn</small>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <small>Số điện thoại</small>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <small>Vị trí rừng</small>
+                                    <select class="form-control">
+                                        <option value="1">Rừng Bạch Mã</option>
+                                        <option value="2">Rừng Bến En</option>
+                                        <option value="3">Bidoup Núi Bà</option>
+                                        <option value="4">Rừng Xuân Liên</option>
+                                        <option value="5">Rừng Nam Cát Tiên</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <small>Email</small>
+                                    <input type="email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <small>Địa chỉ</small>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <small>Số lượng cây</small>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <small>Loại cây bạn trồng</small>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox"
+                                                       value="option1">
+                                                <label class="form-check-label">Cây Xoan
+                                                    Ta</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox"
+                                                       value="option2">
+                                                <label class="form-check-label">Cây Lõi
+                                                    Thọ</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox"
+                                                       value="option3">
+                                                <label class="form-check-label">Cây Vên
+                                                    Vên</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox"
+                                                       value="option4">
+                                                <label class="form-check-label">Cây Pơ Mu</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox"
+                                                       value="option5">
+                                                <label class="form-check-label">Cây Xà Cừ</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <small>Ghi chú</small>
+                                    <textarea rows="5" class="form-control"></textarea>
+                                    <small class="form-text text-muted">Lưu ý: Thông tin trong form này, giúp chúng tôi
+                                        tiện liên lạc và ghi lời nhắn của bạn lên khu rừng. Chúng tôi cam kết giữ bí mật
+                                        mọi
+                                        thông tin của bạn, không chia sẻ với bên thứ 3, nếu không được sự đồng ý của
+                                        bạn!</small>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <button type="submit" class="btn btn-leaf">Đăng ký</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="programSection-detail-2">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="banner">
+                    <img src="./assets/images/program-section-detail-2.jpg" alt="" class="background">
+                    <img src="./assets/images/logo.svg" alt="" class="logo">
+                    <div class="title">Doanh nghiệp cùng<br/>chung tay bảo vệ thiên nhiên</div>
+                </div>
+                <div class="content">
+                    <p>Chúng tôi luôn sẵn sàng hợp tác với doanh nghiệp, trường học, theo nhiều cách khác nhau, cùng tạo
+                        ra các giá trị chung, vì lợi ích của cộng đồng và môi trường.</p>
+                    <p>khi tham gia trồng cây ở khu rừng nào, mã số cây, logo và lời nhắn của đơn vị đó sẽ được cập nhật
+                        trên trang web của chương trình ở vị trí khu rừng tương ứng. Tình trạng cây sẽ được cập nhật
+                        trong 5 năm</p>
+                    <p>Chương trình có thể cung cấp cây con để quý doanh nghiệp có thể tự tay trồng. Nếu đơn vị chỉ muốn
+                        quyên góp để chương trình trồng cây thay. Xem chi tiết <span class="cursor-pointer text-success"
+                                                                                     data-dismiss="modal"
+                                                                                     data-toggle="modal"
+                                                                                     data-target="#programSection-detail-3">tại đây</span>:
+                    </p>
+                    <p>Chương trình Trồng rừng cùng Forest and City là một cách hiệu quả, bền vững để đơn vị bạn thực
+                        hiện trách nhiệm xã hội với cộng đồng, cùng nhau tạo ra các giá trị chung đôi bên cùng có lợi.
+                        Hoạt động trồng rừng cũng góp phần giúp bạn xây dựng thương hiệu bền vững, uy tín, trách nhiệm,
+                        hiệu quả! Các chương trình trồng rừng, kết hợp trải nghiệm thiên nhiên còn giúp kết nối, xây
+                        dựng tinh thần nhóm, nhằm đẩy mạnh hiệu quả làm việc, lao động, sản xuất, học tập tại đơn
+                        vị.</p>
+                    <p><strong>Hướng dẫn quy trình TRỒNG CÂY</strong></p>
+                    <ul>
+                        <li>Điền thông tin theo form bên dưới</li>
+                        <li>Để lại lời nhắn và chương trình sẽ liện hệ với bạn</li>
+                    </ul>
+                    <h6 class="mt-4 mb-2"><strong>Đăng ký thông tin</strong></h6>
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <small>Tên doanh nghiệp</small>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <small>Số điện thoại</small>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <small>Vị trí rừng</small>
+                                    <select class="form-control">
+                                        <option value="1">Rừng Bạch Mã</option>
+                                        <option value="2">Rừng Bến En</option>
+                                        <option value="3">Bidoup Núi Bà</option>
+                                        <option value="4">Rừng Xuân Liên</option>
+                                        <option value="5">Rừng Nam Cát Tiên</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <small>Email</small>
+                                    <input type="email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <small>Địa chỉ</small>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <small>Số lượng cây</small>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <small>Ghi chú</small>
+                                    <textarea rows="5" class="form-control"></textarea>
+                                    <small class="form-text text-muted">Lưu ý: Thông tin trong form này, giúp chúng tôi
+                                        tiện liên lạc và ghi lời nhắn của bạn lên khu rừng. Chúng tôi cam kết giữ bí mật
+                                        mọi
+                                        thông tin của bạn, không chia sẻ với bên thứ 3, nếu không được sự đồng ý của
+                                        bạn!</small>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <button type="submit" class="btn btn-leaf">Đăng ký</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="programSection-detail-3">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="banner">
+                    <img src="./assets/images/program-section-detail-3.jpg" alt="" class="background">
+                    <img src="./assets/images/logo.svg" alt="" class="logo">
+                    <div class="title">Trồng cây, trồng hi vọng<br/>Trồng hi vọng, trồng tương lai</div>
+                </div>
+                <div class="content">
+                    <p>Chắc hẳn bạn đã biết đến tác dụng to lớn của cây xanh, của rừng. Đứng trước tình trạng các khu
+                        rừng đang bị lấn chiếm phục vụ mục đích phát triển; nhiều khu rừng nghèo kiệt, không phát huy
+                        hết chức năng sinh thái của rừng</p>
+                    <p>Bạn có thể chọn các hình thức quyên góp, góp cây con bạn đã trồng tại nhà, bạn quyên góp số tiền
+                        tương ứng với số cây bạn chọn, hoặc bạn có thể đăng kí tình nguyện trồng cây cùng chương
+                        trình.</p>
+                    <p><strong>Hướng dẫn quy trình TRỒNG CÂY</strong></p>
+                    <ul>
+                        <li>Điền thông tin theo form bên dưới</li>
+                        <li>Để lại lời nhắn và chương trình sẽ liện hệ với bạn</li>
+                    </ul>
+                    <h6 class="mt-4 mb-2"><strong>Đăng ký thông tin</strong></h6>
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <small>Tên tham gia</small>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <small>Số điện thoại</small>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <small>Vị trí rừng</small>
+                                    <select class="form-control">
+                                        <option value="1">Rừng Bạch Mã</option>
+                                        <option value="2">Rừng Bến En</option>
+                                        <option value="3">Bidoup Núi Bà</option>
+                                        <option value="4">Rừng Xuân Liên</option>
+                                        <option value="5">Rừng Nam Cát Tiên</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <small>Số lượng cây</small>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <small>Hình thức tham gia</small>
+                                    <select class="form-control">
+                                        <option value="1">Cá nhân</option>
+                                        <option value="2">Doanh nghiệp</option>
+                                        <option value="3">Tình nguyện viên trồng rừng</option>
+                                        <option value="4">Khác</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <small>Email</small>
+                                    <input type="email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <small>Địa chỉ</small>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <small>Ghi chú</small>
+                                    <textarea rows="5" class="form-control"></textarea>
+                                    <small class="form-text text-muted">Lưu ý: Thông tin trong form này, giúp chúng tôi
+                                        tiện liên lạc và ghi lời nhắn của bạn lên khu rừng. Chúng tôi cam kết giữ bí mật
+                                        mọi
+                                        thông tin của bạn, không chia sẻ với bên thứ 3, nếu không được sự đồng ý của
+                                        bạn!</small>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <button type="submit" class="btn btn-leaf">Đăng ký</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

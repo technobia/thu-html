@@ -336,3 +336,71 @@ $secondary-color: #7abf18;
     }
   }
 }
+
+
+//MODALS
+#programSection-detail-1,
+#programSection-detail-2,
+#programSection-detail-3 {
+  .modal-body {
+    position: relative;
+    padding: 0;
+  }
+
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1;
+    color: white;
+  }
+
+  .banner {
+    width: 100%;
+    height: 250px;
+    display: block;
+    margin-bottom: 15px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, .25)
+    }
+
+    .background {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .logo {
+    max-width: 120px;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    z-index: 1;
+  }
+
+  .title {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+    width: 80%;
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .content {
+    padding: 20px 40px;
+  }
+}
