@@ -144,6 +144,7 @@
   height: auto;
   background: #263521;
   padding-top: 20px;
+  color: white;
 
   .icons {
     display: none;
@@ -159,35 +160,41 @@
     }
   }
 
-  &-left,
-  &-right {
-    color: white;
+  .title {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
 
-    .title {
-      margin-bottom: 10px;
-      width: 100%;
-      font-size: 16px;
+  ul {
+    margin-bottom: 40px;
+    padding: 0;
+
+    li {
+      list-style: none;
       text-align: center;
-    }
+      position: relative;
 
-    ul {
-      margin-bottom: 40px;
-      padding: 0;
+      a {
+        color: #cccccc;
+        font-size: 12px;
+        transition: .25s ease;
 
-      li {
-        list-style: none;
-        text-align: center;
-
-        a {
-          color: #cccccc;
-          font-size: 12px;
-          transition: .25s ease;
-
-          &:hover {
-            text-decoration: none;
-            color: #e59248;
-          }
+        &:hover {
+          text-decoration: none;
+          color: #e59248;
         }
+      }
+
+      span {
+        color: #cccccc;
+        font-size: 12px;
+        cursor: pointer;
+      }
+
+      ul {
+        margin-bottom: 0;
       }
     }
   }
@@ -196,38 +203,67 @@
   .footer {
     height: 45px;
     padding-top: 0;
+    position: relative;
 
     .icons {
       display: flex;
+      position: absolute;
+      left: 50px;
     }
 
-    &-left,
-    &-right {
-      .title {
-        display: none;
-      }
+    .title {
+      display: none;
+    }
 
-      ul {
-        margin-bottom: 0;
-        display: flex;
+    ul {
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      li {
+        display: inline-flex;
         align-items: center;
+        height: 45px;
+        margin: 0 10px;
 
-        li {
-          display: inline-flex;
-          align-items: center;
-          height: 45px;
-          margin: 0 10px;
+        .fa {
+          transition: .25s ease;
+        }
+
+        &:hover {
+          .fa {
+            transform: rotate(180deg);
+          }
+
+          ul {
+            display: flex;
+          }
+        }
+
+        ul {
+          position: absolute;
+          bottom: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          flex-direction: column;
+          background: #263521;
+          transition: .5s ease;
+          display: none;
+
+          li {
+            white-space: nowrap;
+          }
         }
       }
-    }
 
-    &-left ul {
-      flex-direction: row-reverse;
-      justify-content: flex-end;
-    }
-
-    &-right ul {
-      justify-content: flex-end;
+      li.sub-menu-blog {
+        ul {
+          left: auto;
+          right: 0;
+          transform: unset;
+        }
+      }
     }
   }
 }

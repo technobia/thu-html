@@ -3,6 +3,7 @@
 <head>
     <title>Ha Oanh Thu Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
     <script src="./vendor/bootstrap/jquery-3.5.1.slim.min.js"></script>
     <script src="./vendor/bootstrap/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
@@ -41,27 +42,32 @@
 
 <div class="footer container-fluid">
     <div class="row">
-        <div class="col-lg-5 footer-left">
-            <h4 class="title">Ươm hạt giống tại nhà</h4>
-            <ul>
-                <li><a href="tree-at-home.html#eventSection">Các hoạt động</a></li>
-                <li><a href="tree-at-home.html#customEventSection">Sự kiện nổi bật</a></li>
-                <li><a href="tree-at-home.html#threeItem">Hướng dẫn cách trồng cây</a></li>
-                <li><a href="tree-at-home.html#testim">Blogs</a></li>
-            </ul>
-        </div>
-        <div class="col-lg-2 icons">
+        <div class="icons">
             <a href="#" class="mr-2"><img src="./assets/images/icon-facebook-brands.svg" alt=""></a>
             <a href="#"><img src="./assets/images/icon-instagram-brands.svg" alt=""></a>
         </div>
-        <div class="col-lg-5 footer-right">
-            <h4 class="title">Trồng cây con tại rừng</h4>
+        <div class="col-lg-12">
+            <h4 class="title">Danh mục</h4>
             <ul>
+                <li><a href="tree-at-home.html#eventSection">Các hoạt động</a></li>
+                <li><a href="tree-at-home.html#threeItem">Hướng dẫn cách trồng cây</a></li>
                 <li><a href="tree-at-forest.html#programSection">Chương trình tham gia</a></li>
-                <li><a href="tree-at-forest.html#activitiesSection">Sự kiện</a></li>
+                <li>
+                    <span class="d-none d-lg-block">Sự kiện <i class="fa fa-caret-down"></i></span>
+                    <ul>
+                        <li><a href="tree-at-home.html#customEventSection">Sự kiện trồng tại nhà</a></li>
+                        <li><a href="tree-at-forest.html#activitiesSection">Sự kiện trồng tại rừng</a></li>
+                    </ul>
+                </li>
                 <li><a href="tree-at-forest.html#forestsSection">Rừng Việt Nam</a></li>
                 <li><a href="tree-at-forest.html#trainingSection">Training Online</a></li>
-                <li><a href="tree-at-forest.html#blogsSection">Blogs</a></li>
+                <li class="sub-menu-blog">
+                    <span class="d-none d-lg-block">Blogs <i class="fa fa-caret-down"></i></span>
+                    <ul>
+                        <li><a href="tree-at-home.html#testim">Blogs tại nhà</a></li>
+                        <li><a href="tree-at-home.html#blogs">Blogs tại rừng</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
