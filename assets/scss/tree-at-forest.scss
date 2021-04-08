@@ -404,3 +404,37 @@ $secondary-color: #7abf18;
     padding: 20px 40px;
   }
 }
+
+#rung-nam-cat-tien,
+#rung-ben-en,
+#rung-xuan-lien,
+#bidoup-nui-ba,
+#rung-bach-ma {
+  .modal-body {
+    .pagination {
+      .page-link {
+        color: #0b2e13;
+        border: 0;
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #rung-nam-cat-tien,
+  #rung-ben-en,
+  #rung-xuan-lien,
+  #bidoup-nui-ba,
+  #rung-bach-ma {
+    .modal-body img {
+      max-width: unset;
+    }
+  }
+}
