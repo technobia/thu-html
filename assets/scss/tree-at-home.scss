@@ -78,7 +78,7 @@ $footer-color: #263521;
   margin-bottom: 32px;
 
   .background {
-    background: url('../images/bg-forest-section.jpg') no-repeat center;
+    background: url('../images/bg-forest-section.jpg') no-repeat center 140px;
     background-size: cover;
   }
 
@@ -477,6 +477,32 @@ $footer-color: #263521;
           display: inline-block;
           text-align: center;
         }
+      }
+    }
+  }
+}
+
+
+#tree-detail-1 {
+  .modal-body {
+    .nav-tabs {
+      .nav-link {
+        font-size: 13px;
+        text-transform: uppercase;
+
+        &.active {
+          color: white;
+          background: $primary-color;
+        }
+      }
+    }
+
+    .nav-link {
+      color: black;
+
+      &.active {
+        background: transparent;
+        border: 1px solid $primary-color;
       }
     }
   }
