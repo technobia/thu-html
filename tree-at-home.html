@@ -78,13 +78,29 @@
 
     <section id="eventSection" class="event-section">
         <div class="container-fluid">
-            <div class="section-title text-center mb-5">Các hoạt động</div>
+            <div class="section-title text-center mb-5">Hướng dẫn tham gia</div>
         </div>
         <div class="container-fluid background">
             <div class="row py-5">
                 <div class="col-lg-2 p-0 offset-lg-1">
                     <div class="item">
                         <img src="./assets/images/tree-at-home-event-1.jpg" alt="">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 p-0">
+                    <div class="item">
+                        <img src="./assets/images/tree-at-home-event-5.jpg" alt="">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 p-0">
+                    <div class="item">
+                        <img src="./assets/images/tree-at-home-event-4.jpg" alt="">
                         <div class="content">
                             Lorem ipsum dolor sit amet, consectetur
                         </div>
@@ -101,22 +117,6 @@
                 <div class="col-lg-2 p-0">
                     <div class="item">
                         <img src="./assets/images/tree-at-home-event-3.jpg" alt="">
-                        <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 p-0">
-                    <div class="item">
-                        <img src="./assets/images/tree-at-home-event-4.jpg" alt="">
-                        <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 p-0">
-                    <div class="item">
-                        <img src="./assets/images/tree-at-home-event-5.jpg" alt="">
                         <div class="content">
                             Lorem ipsum dolor sit amet, consectetur
                         </div>
@@ -376,7 +376,7 @@
         </div>
     </section>
 
-    <section id="testim" class="testim pt-10">
+    <section id="testim" class="testim pt-10 d-none">
         <div class="section-title text-center mb-5">Hãy tham gia cùng chúng tôi</div>
         <div class="testim-cover">
             <div class="wrap">
@@ -385,10 +385,14 @@
                 <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
                 <ul id="testim-dots" class="dots">
                     <li class="dot active"></li><!--
-                    --><li class="dot"></li><!--
-                    --><li class="dot"></li><!--
-                    --><li class="dot"></li><!--
-                    --><li class="dot"></li>
+                    -->
+                    <li class="dot"></li><!--
+                    -->
+                    <li class="dot"></li><!--
+                    -->
+                    <li class="dot"></li><!--
+                    -->
+                    <li class="dot"></li>
                 </ul>
                 <div id="testim-content" class="cont">
 
@@ -419,11 +423,31 @@
                     <div>
                         <div class="img"><img src="https://picsum.photos/id/5/200/200" alt=""></div>
                         <h2>Ms. Lorem R. Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco.</p>
                     </div>
 
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="./assets/images/blog-1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 pt-10">
+                    <div class="small mb-4 text-black-50">TOGETHER WE CAN MAKE A DIFFERENCE</div>
+                    <h3 class="mb-3 text-nowrap">Thêm mảng xanh cho ban công nhà bạn</h3>
+                    <p>Trồng cây thân gỗ trong nhà tạo nên những mảng xanh, cung cấp nguồn không khí trong lành và làm
+                        đẹp cho ngôi nhà của bạn. Tuy nhiên, để cây trồng được lâu, sinh trưởng và phát triển đều đặn
+                        thì bạn không nên bỏ qua những điều này</p>
+                    <button class="btn btn-leaf" data-toggle="modal" data-target="#blog-detail">Chi tiết</button>
+                </div>
             </div>
         </div>
     </section>
@@ -434,7 +458,8 @@
                 <div class="row custom-background">
                     <div class="col-lg-3 mb-3 mb-lg-0">
                         <div class="d-flex align-items-center justify-content-center">
-                            <a href="index.html" style="width: 300px; height: 200px;"><img src="./assets/images/logo.svg" alt=""></a>
+                            <a href="index.html" style="width: 300px; height: 200px;"><img
+                                    src="./assets/images/logo.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-3 offset-lg-3 mb-3 mb-lg-0">
@@ -822,6 +847,64 @@
                     </div>
                     <div class="tab-pane fade py-3" id="tab-3">
                         Nội dung đang cập nhật ...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="blog-detail">
+    <div class="modal-dialog modal-lg" style="max-width: 900px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Thêm mảng xanh cho ban công nhà bạn</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <p>Trồng cây thân gỗ trong nhà tạo nên những mảng xanh, cung cấp nguồn không khí trong lành và làm
+                        đẹp
+                        cho ngôi nhà của bạn. Tuy nhiên, để cây trồng được lâu, sinh trưởng và phát triển đều đặn thì
+                        bạn
+                        không nên bỏ qua những điều này:</p>
+                    <h4>1. Trồng cây ở khu vực nhiều ánh sáng:</h4>
+                    <div class="w-50 mx-auto mb-3">
+                        <img src="./assets/images/blog-detail-1.jpg" alt=""
+                             style="width: 100%; height: 400px; object-fit: contain">
+                    </div>
+                    <p>Cây cần điều kiện ánh sáng đủ thì mới có thể sống lâu dài. Vì thế, khi trồng cây thân gỗ trong
+                        nhà
+                        bạn cần trồng ở những vị trí như giếng trời, khoảng trống lớn để ánh sáng mặt trời dễ dàng xuyên
+                        qua. Hoặc bạn có thể chọn các loại cây thân gỗ trồng ban công, giúp làm mát nền rất hiệu quả.
+                        Ngoài
+                        ra, bạn có thể bố trí thêm đèn ở khu vực trồng cây để có thêm ánh sáng nuôi cây. Nếu không muốn
+                        tốn
+                        kém như vậy, khi lựa chọn bạn nên chọn những cây có chiều cao tương đối với giếng trời để cây có
+                        khả
+                        năng đón được tối đa ánh nắng mặt trời.</p>
+                    <h4>2. Bố trí số lượng cây hợp lý:</h4>
+                    <p>Khi tạo một sân vườn trong nhà bạn luôn muốn trồng nhiều cây xanh. Nhưng, số lượng cây trồng sẽ
+                        phụ
+                        thuộc vào diện tích sân vườn nhà bạn.</p>
+                    <p>Với diện tích nhỏ, bạn chỉ cần trồng một cây thân gỗ cũng có thể tạo mảng xanh cho không gian
+                        sống
+                        của mình rồi. Nếu có diện tích lớn hơn, bạn có thể trồng cây thân gỗ lớn kèm theo 3 – 5 chậu cây
+                        nhỏ để
+                        gia tăng sự đa dạng hệ thực vật.</p>
+                    <p>Ngoài ra, bạn nên quan tâm đến việc kết hợp những loại cây nào với nhau để làm sạch không khí
+                        trong
+                        nhà.</p>
+                    <h4>3. Tỉa cành/lá thưa để cây phát triển phù hợp</h4>
+                    <p>Những cây thân gỗ kể trên đều là những cây có tán sum suê và nhiều lá. Nên khi trồng trong nhà,
+                        nhất
+                        là khu vực giếng trời bạn sẽ gặp phải tình trạng cây um tùm. Tốt nhất, bạn nên cắt tỉa bớt
+                        cành/lá
+                        thừa, chỉ để lại những cành chính và một số lượng lá nhất định.</p>
+                    <div class="w-50 mx-auto">
+                        <img src="./assets/images/blog-detail-2.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
