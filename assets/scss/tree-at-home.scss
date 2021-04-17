@@ -485,7 +485,30 @@ $footer-color: #263521;
 
 
 #tree-detail-1 {
+  .modal-dialog {
+    max-width: 100% !important;
+    width: calc(100vw - 30px - 1.75rem);
+  }
+
+  .modal-content {
+    min-height: calc(100vh - 30px - 3.5rem);
+  }
+
   .modal-body {
+    position: relative;
+    padding-bottom: 330px;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 300px;
+      background: url('../images/bg-tree-detail-1.jpg') no-repeat center;
+      background-size: cover;
+    }
+
     .nav-tabs {
       .nav-link {
         font-size: 13px;
