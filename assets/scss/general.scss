@@ -47,6 +47,10 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
+.text-primary {
+  color: #3d9b18 !important;
+}
+
 // Sections
 .section-title {
   font-family: $font-heading;
@@ -84,6 +88,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 .pb-10 {
   padding-bottom: 128px;
+}
+@media (min-width: 1200px) {
+  .py-lg-10 {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+  .pt-lg-10 {
+    padding-top: 128px;
+  }
+  .pb-lg-10 {
+    padding-bottom: 128px;
+  }
 }
 
 

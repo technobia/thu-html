@@ -181,7 +181,7 @@ $secondary-color: #7abf18;
       left: 0;
       right: 0;
       bottom: 0;
-      height: 50%;
+      height: 100%;
       z-index: -1;
       background: url('../images/bg-forest-section.jpg') no-repeat center;
       background-size: cover;
@@ -197,6 +197,15 @@ $secondary-color: #7abf18;
         object-fit: cover;
         border-radius: 100vh;
         overflow: hidden;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .forests-section {
+    .container-fluid {
+      .background {
+        height: 50%;
       }
     }
   }
@@ -438,4 +447,14 @@ $secondary-color: #7abf18;
       max-width: unset;
     }
   }
+}
+
+
+.bg-brush {
+  background: url('../images/bg-brush.png') no-repeat left center;
+  background-size: contain;
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color:white;
 }
