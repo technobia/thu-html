@@ -80,25 +80,25 @@ h1, h2, h3, h4, h5, h6 {
 
 //Utils
 .py-10 {
-  padding-top: 128px;
-  padding-bottom: 128px;
+  padding-top: 128px !important;
+  padding-bottom: 128px !important;
 }
 .pt-10 {
-  padding-top: 128px;
+  padding-top: 128px !important;
 }
 .pb-10 {
-  padding-bottom: 128px;
+  padding-bottom: 128px !important;
 }
 @media (min-width: 1200px) {
   .py-lg-10 {
-    padding-top: 128px;
-    padding-bottom: 128px;
+    padding-top: 128px !important;
+    padding-bottom: 128px !important;
   }
   .pt-lg-10 {
-    padding-top: 128px;
+    padding-top: 128px !important;
   }
   .pb-lg-10 {
-    padding-bottom: 128px;
+    padding-bottom: 128px !important;
   }
 }
 
@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
   position: absolute;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   align-items: center;
   background: rgba(0, 0, 0, .5);
 
